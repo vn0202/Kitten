@@ -280,3 +280,6 @@
   .scale-img image{
     transition: all 500ms linear;
   }
+  .folower{
+    transition: all 300ms ease-in ;
+  }
