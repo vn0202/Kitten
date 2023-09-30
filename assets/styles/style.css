@@ -63,7 +63,7 @@
     position: relative;
     overflow-x: hidden;
     width: calc(245px *18);
-    gap:16px;
+    gap:8px;
     animation: scroll 10s linear infinite;
     justify-content: center;
     align-content: center;
@@ -91,6 +91,8 @@
   .slide img{
     width: 100%;
     max-width: 100%;
+    height: 65px;
+    object-fit: contain;
   }
   @keyframes scroll {
     0%{
@@ -247,4 +249,34 @@
     100%{
       transform: translateX(calc(-50px * 9));
     }
+  }
+  /*fade in*/
+  .fade-in{
+    animation: fade-in infinite 1s linear alternate-reverse ;
+  }
+  @keyframes fade-in {
+
+    0%{
+      opacity: 1;
+      transform: translate(0,0);
+    }
+    100%{
+      opacity: 0.4;
+      transform: translate(-10px, -10px);
+
+
+    }
+  }
+
+  /*Scale image*/
+  .scale-img{
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 16px;
+  }
+  .scale-img:hover img{
+    transform: scaleX(1.3);
+  }
+  .scale-img image{
+    transition: all 500ms linear;
   }
