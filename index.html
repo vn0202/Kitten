@@ -27,10 +27,10 @@
     </style>
 </head>
 <body>
-<header class="container mx-auto my-10 ">
+<header class="container mx-auto my-10 h-[900px] ">
     <div class="relative">
-        <div class="absolute top-0 left-0">
-            <svg width="231" height="41" viewBox="0 0 231 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="absolute top-0 left-0 z-10">
+            <svg class="" width="231" height="41" viewBox="0 0 231 41" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_252_18)">
                     <path d="M61.8807 25.6628C61.8807 25.5507 61.9377 25.4933 62.0491 25.4933H64.6259C64.7373 25.4933 64.7943 25.5507 64.7943 25.6628V34.0641C64.7943 34.1502 64.8305 34.1919 64.9004 34.1919C64.9289 34.1919 64.9574 34.1789 64.9859 34.1502L73.6928 25.5142C73.7058 25.5012 73.7265 25.4933 73.755 25.4933H77.6423C77.6863 25.4933 77.7122 25.5116 77.7277 25.5455C77.7407 25.582 77.7355 25.6133 77.707 25.642L70.7974 32.5127C70.756 32.5544 70.756 32.6039 70.7974 32.6613L78.9113 40.8305C78.9398 40.8592 78.9424 40.8957 78.9216 40.9374C78.9009 40.9792 78.8776 41 78.8491 41H75.068C75.0525 41 75.0317 40.987 75.0033 40.9583L68.7282 34.7264C68.6997 34.6977 68.6712 34.6847 68.6427 34.6847C68.6142 34.6847 68.5857 34.6977 68.5572 34.7264L64.8176 38.4264C64.802 38.4421 64.7969 38.4682 64.7969 38.5125V40.8305C64.7969 40.9427 64.7399 41 64.6285 41H62.0517C61.9403 41 61.8833 40.9427 61.8833 40.8305V25.6628H61.8807Z"
                           fill="white"/>
@@ -75,8 +75,8 @@
 
 
         </div>
-        <div class="absolute top-0 right-0">
-            <svg width="83" height="71" viewBox="0 0 83 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="absolute top-8  bg-black -right-7 z-10 w-[100px] ">
+            <svg width="100" height="71" viewBox="0 0 83 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_252_40)">
                     <path d="M82.63 70.2H0V7.92L23.08 22.24L42.91 12.21L51.16 8.03L67.03 0L64.28 33.95L82.63 70.2Z"
                           fill="white"/>
@@ -90,11 +90,8 @@
 
 
         </div>
-        <svg class="w-full " viewBox="0 0 1280 718" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M230.637 57H30C13.4315 57 0 70.4315 0 87V688C0 704.569 13.4314 718 30 718H837.789C851.05 718 863.768 712.732 873.145 703.355L975.855 600.645C985.232 591.268 997.95 586 1011.21 586H1250C1266.57 586 1280 572.569 1280 556V132C1280 115.431 1266.57 102 1250 102H1195C1178.43 102 1165 88.5685 1165 72V30C1165 13.4315 1151.57 0 1135 0H345.363C335.352 0 325.571 3.00509 317.288 8.62622L258.712 48.3738C250.429 53.9949 240.648 57 230.637 57Z"
-                  fill="#626262"/>
-        </svg>
-        <svg class="absolute -bottom-[59px] left-10" width="112" height="117" viewBox="0 0 112 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+      
+        <!-- <svg class="absolute -bottom-[59px] left-10" width="112" height="117" viewBox="0 0 112 117" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_256_54)">
                 <path d="M55.66 61.71C25.6 61.71 1.21997 86.08 1.21997 116.15H110.09C110.09 86.09 85.72 61.71 55.65 61.71H55.66Z"
                       fill="white"/>
@@ -106,9 +103,13 @@
                     <rect width="111.32" height="116.15" fill="white"/>
                 </clipPath>
             </defs>
-        </svg>
+        </svg> -->
 
     </div>
+   <video id="my-video" class="absolute top-8 left-0 right-0  bottom-0 w-full" autoplay muted loop>
+  <source src="./assets//videos/video1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 
 
@@ -195,7 +196,7 @@
            <div class="w-1/2">
                <div class="font-bold text-[50px] mb-10 relative">
                    <span class="text-white">LAUNCH YOUR OWN </span>
-                   <p class="text-[#E53988] text-[64px] glitch mb-[100px]">
+                   <p class="text-primary text-[64px] glitch mb-[100px]">
                        <span aria-hidden="true">NFT</span>
                        <span aria-hidden="true">NFT</span>
                        <span aria-hidden="true">NFT</span>
@@ -208,7 +209,7 @@
                    <p> For collectors, by collectors</p>
                </div>
                <div class="flex gap-4">
-                   <button class="py-4 px-7 border border-[1px] border-white  text-white flex items-center gap-4 rounded-full mb-4">
+                   <button class="border-spiner py-4 px-7   text-white flex items-center gap-4 mb-4">
                        <span class="font-bold text-lg "> GET A FREE QUOTE</span>
                    </button>
                    <!--                <div class="font-bold text-xl text-white bg-[#0C5666] rounded-t-2xl items-center relative px-8 py-4">-->
@@ -250,16 +251,16 @@
                    </div>
                </div>
              <div class="flex flex-col gap-6 absolute bottom-[100px] right-0">
-                 <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <svg class="spiner" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M24.29 1.79999L29.34 19.23L46.77 24.28L29.34 29.33L24.29 46.77L19.24 29.33L1.80002 24.28L19.24 19.23L24.29 1.79999Z" stroke="white" stroke-miterlimit="10"/>
                  </svg>
-                 <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <svg class="spiner-2" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M23.29 0.799987L28.34 18.23L45.77 23.28L28.34 28.33L23.29 45.77L18.24 28.33L0.800017 23.28L18.24 18.23L23.29 0.799987Z" fill="white"/>
                  </svg>
-                 <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <svg class="spiner" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M24.29 1.79999L29.34 19.23L46.77 24.28L29.34 29.33L24.29 46.77L19.24 29.33L1.80002 24.28L19.24 19.23L24.29 1.79999Z" stroke="#C9C9C9" stroke-miterlimit="10"/>
                  </svg>
-                 <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <svg class="spiner-2" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M23.29 0.799987L28.34 18.23L45.77 23.28L28.34 28.33L23.29 45.77L18.24 28.33L0.800017 23.28L18.24 18.23L23.29 0.799987Z" fill="white"/>
                  </svg>
 
@@ -888,8 +889,8 @@
            <div class="w-1/2 flex flex-wrap">
                <div class="w-1/2 pr-4 pt-8">
                    <div class="font-bold text-white text-[41px]">
-                       <p>WHERE <span class="text-[#E53988]">IDEAS</span></p>
-                       <p class="text-[#1ED6FF]">TAKE FORM</p>
+                       <p>WHERE <span class="text-primary">IDEAS</span></p>
+                       <p class="text-secondary">TAKE FORM</p>
                    </div>
                    <div class="relative flex justify-end ">
                        <div class=" px-6 py-3 rounded-t-2xl bg-white w-max">
@@ -974,11 +975,11 @@
                <div class=" w-7/12">
                    <div class="text-[40px] font-bold text-white uppercase">
                        BORN FROM THE FUSION OF
-                       <span class="text-[#E53988]">"PHYSICAL"</span>
+                       <span class="text-primary">"PHYSICAL"</span>
                        <br>
                        PRODUCTS WITH
 
-                       <span class="text-[#1ED6FF]">"DIGITAL"</span> TWIST
+                       <span class="text-secondary">"DIGITAL"</span> TWIST
                    </div>
                    <div class="text-white text-lg mb-9 w-full">
                        We infuse physical products with digital elements such as NFC and NFT technology, bringing users closer to
@@ -1000,21 +1001,21 @@
             </div>
 
            <div class="flex justify-around my-12">
-               <div class="scale-img w-[312px] h-[500px] ">
-                   <img class=" w-full object-center h-full"
+               <div class="scale-img w-1/4 mx-6 overflow-hidden">
+                   <img class=" w-full object-contain h-full"
                         src="assets/images/whyus/img_1.png" alt="">
                </div>
-               <div class="scale-img w-[312px] h-[500px]">
-                   <img class=" w-full object-center h-full"
+               <div class="scale-img w-1/4 mx-6 overflow-hidden ">
+                   <img class=" w-full object-contain h-full"
                         src="assets/images/whyus/img.png" alt="">
                </div>
 
-               <div class=" scale-img w-[312px] h-[500px] ">
-                   <img class=" object-center w-full h-full" src="assets/images/whyus/img_2.png"
+               <div class=" scale-img w-1/4 mx-6 overflow-hidden  ">
+                   <img class=" object-contain w-full h-full" src="assets/images/whyus/img_2.png"
                         alt="">
                </div>
-               <div class="scale-img w-[312px] h-[500px] ">
-                   <img class=" object-center w-full h-full"
+               <div class="scale-img w-1/4 mx-6 overflow-hidden  ">
+                   <img class=" object-contain w-full h-full"
                         src="assets/images/whyus/img_3.png" alt="">
                </div>
                <!-- <div class="w-[312px]">
@@ -1036,8 +1037,8 @@
                 <div class="flex ">
                     <div class="font-bold text-[50px] text-white w-4/12">ABOUT US</div>
                     <div class="font-bold text-[50px] text-white w-8/12">
-                        WE ARE A <span class="text-[#E53988]">VISIONARY CREATIVE STUDIO</span>, IN <span
-                            class="text-[#1ED6FF]">THE WEB3 SPACE</span>.
+                        WE ARE A <span class="text-primary">VISIONARY CREATIVE STUDIO</span>, IN <span
+                            class="text-secondary">THE WEB3 SPACE</span>.
                     </div>
                 </div>
             </div>
@@ -1101,7 +1102,7 @@
                             Ready to embark on your journey?
                         </div>
                         <div>
-                            <button class="py-4 px-7 border border-[1px] border-white  text-white flex items-center gap-4 rounded-full mb-4">
+                            <button class="border-spiner py-4 px-7   text-white flex items-center gap-4 mb-4 ">
                                 <span class="font-bold text-lg ">EXPLORE NOW</span>
                             </button>
                         </div>
@@ -1115,14 +1116,14 @@
     <div class="flex h-[200px] container mx-auto px-10 items-center mt-32">
         <div class="font-bold text-[50px] mr-[400px] ">
             <span class="text-white">OUR </span>
-            <span class="text-[#E53988]">MISSION</span>
+            <span class="text-primary">MISSION</span>
         </div>
         <div class="text-white text-[36px] font-bold uppercase flex-1">
-            To create <span class="text-[#E53988]">extraordinary</span>
+            To create <span class="text-primary">extraordinary</span>
               <br>
-            <span class="text-[#E53988]">products</span>
+            <span class="text-primary">products</span>
             at the  crossroads of
-            <span class="text-[#1ED6FF]">physical and digital</span>
+            <span class="text-secondary">physical and digital</span>
 
         </div>
 
@@ -1132,7 +1133,7 @@
 <div class="container mx-auto px-10">
     <div class="flex gap-16">
         <div class="font-bold text-[40px]">
-            <span class="text-[#1ED6FF]">LATEST</span> <span class="text-white">COLLECTION</span>
+            <span class="text-secondary">LATEST</span> <span class="text-white">COLLECTION</span>
         </div>
         <div class="flex gap-8">
             <svg width="56" height="47" viewBox="0 0 56 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1148,19 +1149,19 @@
         </div>
     </div>
     <div class="flex gap-8 my-12">
-        <div class=" scale-img w-[312px] h-[400px]">
+        <div class=" scale-img w-[312px] overflow-hidden h-[400px]">
             <img class="w-full object-center h-full"
                  src="assets/images/products/clothes.webp" alt="">
         </div>
-        <div class="scale-img w-[312px] h-[400px]">
+        <div class="scale-img w-[312px] overflow-hidden h-[400px]">
             <img class="w-full object-center h-full"
                  src="assets/images/products/clothes2.webp" alt="">
         </div>
-        <div class=" scale-img w-[312px] h-[400px]">
+        <div class=" scale-img w-[312px] overflow-hidden h-[400px]">
             <img class="w-full object-center h-full" src="assets/images/products/ring.webp"
                  alt="">
         </div>
-        <div class=" scale-img w-[312px] h-[400px]">
+        <div class=" scale-img w-[312px] overflow-hidden h-[400px]">
             <img class="w-full object-center h-full"
                  src="assets/images/products/ring2.webp" alt="">
         </div>

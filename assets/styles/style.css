@@ -273,13 +273,88 @@
     overflow: hidden;
     border: 1px solid white;
     border-radius: 16px;
+
+
+  }
+  .scale-img img{
+    transform: scale(1);
+    border-radius: 16px;
+
+
   }
   .scale-img:hover img{
     transform: scaleX(1.3);
+
+
   }
-  .scale-img image{
-    transition: all 500ms linear;
+  .scale-img img{
+    transition: all 500ms ease-in-out;
   }
   .folower{
-    transition: all 300ms ease-in ;
+    transition: all 500ms ease-in ;
   }
+  /* spiner */
+  .spiner{
+    animation: spiner 2000ms infinite ease-in-out alternate-reverse;
+  }
+  .spiner-2{
+    animation: spiner-2 2000ms infinite ease-in-out alternate-reverse;
+
+  }
+  @keyframes spiner{
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spiner-2{
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+  /*  border spiner xs*/
+  .border-spiner{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid white;
+  
+
+  }
+  .border-spiner:hover{
+    border-color: transparent;
+  }
+  .border-spiner:hover::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: 50px;
+    z-index: 1;
+    background: linear-gradient(to right, #E53988, #1ED6FF);
+    animation: spiner 1000ms linear infinite;
+    }
+    .border-spiner span{
+      position: relative;
+      z-index: 10;
+
+    }
+    .border-spiner::after{
+      content: '';
+      position: absolute;
+      z-index: 5;
+      border-radius: 18px;
+      inset: 2px;
+      background: black;
+
+    }
+    
+    
