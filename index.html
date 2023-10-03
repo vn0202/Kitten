@@ -8,6 +8,9 @@
     <title>Kitten</title>
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400;1,6..12,800&display=swap" rel="stylesheet">
     <style>
         html {
             font-size: 14px !important;
@@ -20,17 +23,17 @@
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
             background-color: #000000;
         }
 
     </style>
 </head>
 <body>
-<header class="container mx-auto my-10 h-[900px] ">
-    <div class="relative">
-        <div class="absolute top-0 left-0 z-10">
-            <svg class="" width="231" height="41" viewBox="0 0 231 41" xmlns="http://www.w3.org/2000/svg">
+<header class="container mx-auto px-8 lg:px-0 py-8 ">
+    <div class="relative h-full">
+        <div class="absolute -top-5 md:-top-[10px] lg:top-0  left-0 z-10">
+            <svg class="w-[80px] md:w-[150px] lg:w-[261px]"  height="41" viewBox="0 0 231 41" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_252_18)">
                     <path d="M61.8807 25.6628C61.8807 25.5507 61.9377 25.4933 62.0491 25.4933H64.6259C64.7373 25.4933 64.7943 25.5507 64.7943 25.6628V34.0641C64.7943 34.1502 64.8305 34.1919 64.9004 34.1919C64.9289 34.1919 64.9574 34.1789 64.9859 34.1502L73.6928 25.5142C73.7058 25.5012 73.7265 25.4933 73.755 25.4933H77.6423C77.6863 25.4933 77.7122 25.5116 77.7277 25.5455C77.7407 25.582 77.7355 25.6133 77.707 25.642L70.7974 32.5127C70.756 32.5544 70.756 32.6039 70.7974 32.6613L78.9113 40.8305C78.9398 40.8592 78.9424 40.8957 78.9216 40.9374C78.9009 40.9792 78.8776 41 78.8491 41H75.068C75.0525 41 75.0317 40.987 75.0033 40.9583L68.7282 34.7264C68.6997 34.6977 68.6712 34.6847 68.6427 34.6847C68.6142 34.6847 68.5857 34.6977 68.5572 34.7264L64.8176 38.4264C64.802 38.4421 64.7969 38.4682 64.7969 38.5125V40.8305C64.7969 40.9427 64.7399 41 64.6285 41H62.0517C61.9403 41 61.8833 40.9427 61.8833 40.8305V25.6628H61.8807Z"
                           fill="white"/>
@@ -72,11 +75,8 @@
                     </clipPath>
                 </defs>
             </svg>
-
-
         </div>
-        <div class="absolute top-0  bg-black right-0 z-10 w-[110px] h-[100px] ">
-            <svg width="100" height="71" viewBox="0 0 83 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class=" absolute -top-5 md:-top-4  z-20 -right-[10px] lg:right-[10px] w-[30px] md:w-[54px] lg:w-[80px] h-[56px] md:h-[60px]"  viewBox="0 0 83 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_252_40)">
                     <path d="M82.63 70.2H0V7.92L23.08 22.24L42.91 12.21L51.16 8.03L67.03 0L64.28 33.95L82.63 70.2Z"
                           fill="white"/>
@@ -89,43 +89,35 @@
             </svg>
 
 
+            <div>
+                <video class="max-w-full h-full w-full" id="my-video" autoplay muted loop class="w-full ">
+                    <source src="./assets//videos/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+
+
+        <div class="absolute -bottom-[30px] md:-bottom-[46px] lg:-bottom-[56px] left-10 z-100 flex-col ">
+            <svg class="w-[56px] h-[28px] md:w-[90px] md:h-[45px] lg:w-[112px] lg:h-[57px]" viewBox="0 0 112 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M55.66 1.23C25.6 1.23 1.21997 25.6 1.21997 55.67H110.09C110.09 25.61 85.72 1.23 55.65 1.23H55.66Z" stroke="white" stroke-width="2.45" stroke-miterlimit="10"/>
+                </svg>
+                
+                
+            <svg class=" w-[56px] h-[28px] md:w-[90px] md:h-[45px]  lg:w-[110px] lg:h-[56px]"  viewBox="0 0 110 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M54.66 0.709999C24.6 0.709999 0.219971 25.08 0.219971 55.15H109.09C109.09 25.09 84.72 0.709999 54.65 0.709999H54.66Z" fill="white"/>
+                </svg>
+                
         </div>
-      
-        <!-- <svg class="absolute -bottom-[59px] left-10" width="112" height="117" viewBox="0 0 112 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_256_54)">
-                <path d="M55.66 61.71C25.6 61.71 1.21997 86.08 1.21997 116.15H110.09C110.09 86.09 85.72 61.71 55.65 61.71H55.66Z"
-                      fill="white"/>
-                <path d="M55.66 1.23C25.6 1.23 1.21997 25.6 1.21997 55.67H110.09C110.09 25.61 85.72 1.23 55.65 1.23H55.66Z"
-                      stroke="white" stroke-width="2.45" stroke-miterlimit="10"/>
-            </g>
-            <defs>
-                <clipPath id="clip0_256_54">
-                    <rect width="111.32" height="116.15" fill="white"/>
-                </clipPath>
-            </defs>
-        </svg> -->
-
+        
     </div>
-    <div class="absolute top-8 left-0 right-0  bottom-0 w-full px-10">
-        <video id="my-video" autoplay muted loop class="w-full ">
-            <source src="./assets//videos/video1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-    </div>
-    
-   
-
-
-
 </header>
-<main class="mb-10" style="
-  background: url('assets/images/img_1.png'), url('assets/images/img_2.png'); background-repeat: no-repeat, no-repeat; background-size:1204px 1057px, 1260px 550px;  background-position: right -66px, right 484px "
- >
-   <div class="container mx-auto px-10">
+<main class="mb-10 lg:mt-24" >
+   <div class="container mx-auto px-4 lg:px-10">
 <!--        style=" background: url('../assets/images/img_1.png'), url('../assets/images/img_2.png'); background-repeat: no-repeat, no-repeat; background-size:1204px 1057px, 1260px 550px;  background-position: right -66px, right 484px "-->
 
        <div class="flex justify-end">
-           <svg width="168" height="117" viewBox="0 0 168 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <svg class="w-[110px] lg:w-[168px]" height="117" viewBox="0 0 168 117" fill="none" xmlns="http://www.w3.org/2000/svg">
                <g clip-path="url(#clip0_256_57)">
                    <path d="M167.99 59.11C167.74 58.18 167.46 57.25 167.17 56.33C121.07 68.27 84.05 95.01 84.49 116.06C84.05 95.01 121.43 69.51 167.99 59.11Z"
                          fill="white"/>
@@ -196,42 +188,53 @@
            </svg>
 
        </div>
-       <div class="flex gap-4">
-           <div class="w-1/2">
-               <div class="font-bold text-[50px] mb-10 relative">
+       <div class="flex flex-col md:flex-row gap-4">
+           <div class="md:w-1/2">
+               <div class="font-bold text-[28px] text-center  md:text-left md:text-[35px] lg:text-[45px] mb-10 ">
                    <span class="text-white">LAUNCH YOUR OWN </span>
-                   <p class="text-primary text-[64px] glitch mb-[100px]">
-                       <span aria-hidden="true">NFT</span>
-                       <span aria-hidden="true">NFT</span>
-                       <span aria-hidden="true">NFT</span>
+                   <p id="brand-text" class="text-primary relative translate-x-1/4 md:translate-x-0 text-center md:text-left text-xl md:text-[40px] text-[64px] glitch mb-16 md:mb-[100px]">
+                       <span aria-hidden="true">BRAND</span>
+                       <span aria-hidden="true">BRAND</span>
+                       <span aria-hidden="true">BRAND</span>
                    </p>
                </div>
-               <div class="h-[1px] bg-white mb-10 w-3/4 "></div>
+               <div class="h-[1px] bg-white mb-10 w-full md:w-3/4 "></div>
 
                <div class="text-xl text-white mb-10">
                    <p>Turn your creative passion into a revenue generator.</p>
                    <p> For collectors, by collectors</p>
                </div>
-               <div class="flex gap-4">
-                   <button class="border-spiner py-4 px-7   text-white flex items-center gap-4 mb-4">
-                       <span class="font-bold text-lg "> GET A FREE QUOTE</span>
+               <div class="flex gap-4 ">
+                   <button class="border-spiner py-2 px-2  md:px-4 lg:px-7  text-white flex items-center gap-4 mb-2 peer w-max">
+                       <span class="font-bold text-base lg:text-lg "> GET A FREE QUOTE</span>
+                       <svg class="relative z-10" width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_292_169)">
+                        <path d="M21.0599 12.505L0.939941 0.88501C6.70994 7.55501 6.70994 17.445 0.939941 24.115L21.0599 12.495V12.505Z" fill="#E53988"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_292_169">
+                        <rect width="20.12" height="23.23" fill="white" transform="translate(0.939941 0.88501)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+    
                    </button>
-                   <!--                <div class="font-bold text-xl text-white bg-[#0C5666] rounded-t-2xl items-center relative px-8 py-4">-->
-                   <!--                    <div>-->
-                   <!--                        Ready to team up?-->
-                   <!--                    </div>-->
-                   <!--                    <div class="absolute top-full w-[500px] right-0  bg-[#0C5666] rounded-b-2xl px-8 py-5 rounded-l-2xl">-->
-                   <!--                        Monetize your Intellectual Property (IP) with unique collectibles. Cultivate fandom within your-->
-                   <!--                        community. We take care of the rest.-->
-                   <!--                    </div>-->
-                   <!--                </div>-->
+                                  <div class="fade opacity-0  hidden lg:block invisible peer-hover:visible peer-hover:opacity-100 font-bold text-xl text-white bg-[#0C5666]  bg-opacity-80 rounded-t-2xl items-center relative px-4 lg:px-8 pt-2 pb-1">
+                                      <div>
+                                          Ready to team up?
+                                      </div>
+                                      <div class="absolute top-full w-[500px] right-0  bg-[#0C5666] bg-opacity-80 rounded-b-2xl px-8 py-5 rounded-l-2xl">
+                                          Monetize your Intellectual Property (IP) with unique collectibles. Cultivate fandom within your
+                                          community. We take care of the rest.
+                                      </div>
+                                  </div>
                </div>
 
            </div>
-           <div class="  w-1/2  relative">
-               <div class="h-[800px] relative " style="background: url('assets/images/cards/img.png') no-repeat center/contain">
+           <div class="  md:w-1/2  relative">
+               <div class="h-full relative " style="background: url('assets/images/cards/img.png') no-repeat center/contain">
                  <div class="absolute top-[calc(50%-100px)] -left-8">
-                     <svg width="156" height="156" viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <svg class="w-[100px] lg:w-[156px]" height="156" viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <g clip-path="url(#clip0_292_189)">
                              <path d="M101.125 55.5759C174.007 51.9036 173.154 107.039 100.424 101.125C104.096 174.007 48.9615 173.154 54.8747 100.424C-18.0072 104.096 -17.1542 48.9615 55.5759 54.8747C51.9036 -18.0072 107.039 -17.1542 101.125 55.5759Z" stroke="white" stroke-width="1.71" stroke-miterlimit="10"/>
                              <path d="M131.031 78.8313C125.588 80.8193 116.176 82.4603 102.029 81.3109L79.4241 79.4747L80.5663 102.13C81.2819 116.299 79.3446 125.653 77.1904 131.039C75.2892 125.812 73.5036 116.566 74.6819 102.036L76.5181 79.4313L53.8627 80.5735C39.3109 81.3036 30.1157 79.2362 24.9542 77.1759C30.3976 75.188 39.8096 73.547 53.9494 74.6964L76.5542 76.5325L75.4121 53.8771C74.6964 39.7084 76.6337 30.347 78.788 24.9687C80.6892 30.188 82.4747 39.441 81.2964 53.9711L79.4602 76.5759L102.116 75.4337C116.675 74.7036 125.863 76.7711 131.024 78.8313H131.031Z" fill="white"/>
@@ -243,15 +246,16 @@
                          </defs>
                      </svg>
                  </div>
-                   <div class="glitch-image">
-                       <img class="-translate-x-8" src="assets/images/products/sneaker.png" alt="">
-                       <div class="glitch__layers">
+                   <div class="glitch-image  lg:h-[700px] -translate-x-[40px] md:translate-x-0 ">
+                    <img  id="suspended" class="-translate-x-8 " src="assets/images/products/sneaker.png" alt="">
 
+                       <!-- <img  id="glitch-image" class="-translate-x-8" src="assets/images/products/sneaker.png" alt=""> -->
+                       <!-- <div class="glitch__layers">
                            <img class="glitch__layer" src="assets/images/products/sneaker.png" alt="">
                            <img class="glitch__layer" src="assets/images/products/sneaker.png" alt="">
                            <img class="glitch__layer" src="assets/images/products/sneaker.png" alt="">
 
-                       </div>
+                       </div> -->
                    </div>
                </div>
              <div class="flex flex-col gap-6 absolute bottom-[100px] right-0">
@@ -276,24 +280,25 @@
            </div>
        </div>
        <div class=" flex gap-8 items-end mb-10 relative z-50">
-           <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <svg class="fill-primary" width="63" height="63" viewBox="0 0 63 63"  xmlns="http://www.w3.org/2000/svg">
                <g clip-path="url(#clip0_295_239)">
                    <path d="M0.890049 0C2.59005 0.54 3.80005 1.5 4.85005 2.55C11.6 9.35 20.2701 12.9 28.76 16.77C30.48 17.55 32.0301 17.62 33.8301 16.82C42.4501 12.99 51.1101 9.29 58.0201 2.52C59.14 1.42 60.7701 -0.94 62.32 0.56C63.6 1.8 61.4501 3.61 60.3601 4.7C53.2901 11.73 49.59 20.7 45.73 29.59C45.19 30.83 45.17 31.88 45.69 33.12C48.31 39.45 51.2001 45.66 54.8601 51.45C56.41 53.91 58.69 55.89 60.48 58.21C61.4501 59.46 63.62 61 62.26 62.4C61.08 63.61 59.42 61.56 58.39 60.54C51.3 53.59 42.51 49.57 33.55 45.81C32.03 45.17 30.72 45.2 29.23 45.85C20.3601 49.76 11.43 53.53 4.42005 60.61C3.44005 61.6 1.80005 63.62 0.500049 62.33C-0.779951 61.06 1.18005 59.44 2.18005 58.43C9.28005 51.32 13.13 42.34 17.05 33.36C17.68 31.93 17.68 30.71 17.01 29.32C15.2801 25.72 13.65 22.07 11.98 18.44C9.62005 13.29 6.36005 8.78 2.47005 4.69C1.59005 3.8 0.930049 2.71 0.270049 1.67C-0.309951 0.75 0.100049 0.23 0.890049 0ZM41.1 41.11C45.57 46.25 49.86 51.57 55.51 55.53C51.58 49.85 46.22 45.6 41.1 41.11ZM7.26005 7.27C11.25 12.72 16.36 17.01 21.39 21.37C17.03 16.31 12.73 11.18 7.26005 7.27ZM20.1 42.71C15.5301 46.66 10.73 50.38 7.32005 55.49C12.32 51.99 16.15 47.29 20.1 42.71ZM55.34 7.42C50.1501 11.21 46.0201 16.03 41.91 20.86C46.76 16.74 51.57 12.6 55.34 7.42Z"
-                         fill="white"/>
+                         />
                </g>
                <defs>
                    <clipPath id="clip0_295_239">
-                       <rect width="62.71" height="62.77" fill="white"/>
+                       <rect width="62.71" height="62.77"/>
                    </clipPath>
                </defs>
            </svg>
-           <p class="text-white font-bold text-[36px] uppercase">Abducted Brands</p>
+           <p class="text-white font-bold text-[24px] text-3xl lg:text-4xl uppercase">Abducted Brands</p>
        </div>
    </div>
-    <div class="">
-        <div class="relative ">
-            <div style="rotate: 10deg; transform: translateY(-64px)" class=" absolute top-0 w-full  z-10 ">
-                <div class="flex diagonal">
+    <div>
+        <div class="relative  flex ">
+            <div style="rotate: 10deg; transform: translateY(-64px)" class=" diagonal   z-10 ">
+                <div class="flex ">      
+                    
                     <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
                     </svg>
@@ -361,9 +366,77 @@
                     <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
                     </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>  <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>  <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    
                 </div>
-
             </div>
+           
             <div class="overflow-hidden relative z-20 ">
                 <div class="slider-track bg-[#3B1A53] ">
                     <div class="absolute top-0 right-0 h-full left-0 -z-10 flex flex-col justify-between">
@@ -871,7 +944,7 @@
 </main>
 
 
-<div class="container mx-auto px-10">
+<div class="container mx-auto lg:px-10 mt-28">
        <div class="flex ">
            <div class="flex gap-8 items-end mx-auto">
                <svg width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -884,20 +957,20 @@
                </div>
            </div>
        </div>
-       <div class="flex ">
-           <div class="w-1/2" style=" background: url('assets/images/ISOMETRIC_LINE.png') no-repeat center; background-position: -70px">
+       <div class="flex  flex-col md:flex-row ">
+           <div class="md:w-1/2" style=" background: url('assets/images/ISOMETRIC_LINE.png'); background-position: -70px">
                <div class="fade-in">
-                   <img class="h-[720px]" src="assets/images/img.png" alt="img">
+                   <img class="md:h-[500px] lg:h-[720px]" src="assets/images/img.png" alt="img">
                </div>
            </div>
-           <div class="w-1/2 flex flex-wrap">
-               <div class="w-1/2 pr-4 pt-8">
-                   <div class="font-bold text-white text-[41px]">
+           <div class="w-full md:w-1/2 flex flex-wrap">
+               <div class="w-full lg:w-1/2 pr-4 pt-8">
+                   <div class="font-bold text-white text-[41px] text-center md:text-left">
                        <p>WHERE <span class="text-primary">IDEAS</span></p>
                        <p class="text-secondary">TAKE FORM</p>
                    </div>
-                   <div class="relative flex justify-end ">
-                       <div class=" px-6 py-3 rounded-t-2xl bg-white w-max">
+                   <div class="relative flex justify-center  md:justify-end ">
+                       <div class=" px-6 py-3 rounded-t-2xl  md:bg-white w-max">
                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <g clip-path="url(#clip0_295_232)">
                                    <path d="M22.9011 22.9011C48.3632 48.3632 -6.36626 48.3632 19.0959 22.9011C-6.36626 48.3632 -6.36626 -6.36626 19.0959 19.0959C-6.36626 -6.36626 48.3632 -6.36626 22.9011 19.0959C48.3632 -6.36626 48.3632 48.3632 22.9011 22.9011Z"
@@ -910,13 +983,13 @@
                                </defs>
                            </svg>
                        </div>
-                       <div class="absolute top-full bg-white px-3 py-3 rounded-l-2xl rounded-b-2xl w-[300px]">
+                       <div class="absolute top-full bg-white px-3 py-3 rounded-2xl md:rounded-l-2xl md:rounded-b-2xl w-[300px]">
                            Inspiration turns tangible in our creative space, where ideas take form and dreams become
                            reality. Join us in bringing your vision to life.
                        </div>
                    </div>
                </div>
-               <div class="w-1/2 pl-4">
+               <div class="hidden lg:block w-1/2 pl-4">
                    <div class="relative">
 <!--                       <img class="absolute h-[417px] w-[287px] z-0 top-0" src="../assets/images/last_layer.png">-->
 <!--                       <img class="absolute h-[417px] w-[287px] z-10 top-4 " src="../assets/images/layer.png" alt="">-->
@@ -952,7 +1025,7 @@
 
 
        </div>
-       <div class="mb-16">
+       <div class="mb-16 hidden ">
 
            <div class="flex ">
                <div class="font-bold text-[50px] text-white w-5/12">
@@ -993,7 +1066,7 @@
 
            </div>
        </div>
-       <div class="h-[1px] bg-white mb-10"></div>
+       <div class="h-[1px] bg-white mb-10 mt-[124px] md:mt-0"></div>
        <div class="mb-16">
             <div class="flex gap-6 items-center">
                 <svg width="64" height="63" viewBox="0 0 64 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1004,21 +1077,21 @@
                 </div>
             </div>
 
-           <div class="flex justify-around my-12">
-               <div class="scale-img w-1/4 mx-6 overflow-hidden">
+           <div class="flex my-12 w-full overflow-y-auto">
+               <div class="scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6">
                    <img class=" w-full object-contain h-full"
                         src="assets/images/whyus/img_1.png" alt="">
                </div>
-               <div class="scale-img w-1/4 mx-6 overflow-hidden ">
+               <div class="scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  ">
                    <img class=" w-full object-contain h-full"
                         src="assets/images/whyus/img.png" alt="">
                </div>
 
-               <div class=" scale-img w-1/4 mx-6 overflow-hidden  ">
+               <div class=" scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6 ">
                    <img class=" object-contain w-full h-full" src="assets/images/whyus/img_2.png"
                         alt="">
                </div>
-               <div class="scale-img w-1/4 mx-6 overflow-hidden  ">
+               <div class="scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6 ">
                    <img class=" object-contain w-full h-full"
                         src="assets/images/whyus/img_3.png" alt="">
                </div>
@@ -1032,68 +1105,68 @@
    </div>
 <div class="relative" style="background:linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('assets/images/gradient.png') no-repeat 0px 300px;
 ">
-    <div class="relative h-[1000px]"
-         style="background:  linear-gradient(to bottom, rgba(0,0, 0, 1) 5%, transparent 95%),
-          url('assets/images/map.png') no-repeat top left
-          ; background-size: 50% 1000px">
-        <div class="container mx-auto px-10 mt-[132px]">
+    <div id="map" class="relative lg:h-[1000px]">
+        <div class="container mx-auto px-4 lg:px-10 mt-[132px]">
             <div>
                 <div class="flex ">
-                    <div class="font-bold text-[50px] text-white w-4/12">ABOUT US</div>
-                    <div class="font-bold text-[50px] text-white w-8/12">
+                    <div class="font-bold text-lg md:text-4xl text-[50px] text-white w-4/12">ABOUT US</div>
+                    <div class="font-bold text-lg md:text-4xl text-[50px] text-white w-8/12">
                         WE ARE A <span class="text-primary">VISIONARY CREATIVE STUDIO</span>, IN <span
                             class="text-secondary">THE WEB3 SPACE</span>.
                     </div>
                 </div>
             </div>
-            <div class="flex mt-[300px]">
+            <div class="flex flex-wrap mt-[72px] md:mt-[186px] lg:mt-[300px]">
                 <div class="w-1/2 flex flex-col items-center">
-                    <div class="w-max flex gap-[80px] translate-x-[45%] justify-end">
-                        <div class="self-end relative order-2 peer">
-                            <div class=" relative z-10 text-lg text-white bg-black px-4">SHENZHEN, CHINA</div>
-                            <div class="text-white text-lg p-9 border border-white rounded-2xl absolute top-[10px] w-max">
+                    <div class="w-max flex gap-4 md:gap-[60px] lg:gap-[80px] translate-x-[45%] justify-end">
+                        <img class=" w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:w-[75px] lg:h-[75px]  rounded-full peer  "
+                        src="assets/images/chinesec.png" alt="">
+                        <div class="self-end relative  invisible peer-hover:visible">
+                            <div class=" relative z-10 text-base  md:text-lg text-white bg-black px-4">SHENZHEN, CHINA</div>
+                            <div class="text-white text-sm md:text-lg p-5 md:p-9 border border-white rounded-2xl absolute top-[10px] w-max">
                                 Manufacturing factory
                             </div>
                         </div>
-                        <img class="w-[75px] h-[75px]  rounded-full order-1 invisible peer-hover:visible"
-                             src="assets/images/chinesec.png" alt="">
+                       
 
                     </div>
-                    <div class="w-max flex gap-[80px] translate-x-[22%] justify-end mt-56">
-                        <div class="self-end relative order-2 peer">
-                            <div class=" relative z-10 text-lg text-white bg-black px-4"> HO CHI MINH, VIET NAM</div>
-                            <div class="text-white text-lg p-9 border border-white rounded-2xl absolute top-[10px] min-w-[280px]">
+                    <div class="w-max flex gap-4 md:gap-[60px]lg:gap-[80px] translate-x-[40%] md:translate-x-[34%] lg:translate-x-[22%] justify-end mt-[88px] md:mt-[175px] lg:mt-[261px]">
+                        <img class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:w-[75px] lg:h-[75px] object-cover rounded-full  peer"
+                             src="assets/images/vn.png" alt="">
+                        <div class="self-end relative invisible peer-hover:visible">
+                            <div class=" relative z-10 text-base  md:text-lg text-white bg-black px-4"> HO CHI MINH, VIET NAM</div>
+                            <div class="text-white text-sm md:text-lg p-5 md:p-9 border border-white rounded-2xl absolute top-[10px] min-w-[180px] md::min-w-[280px]">
                                 Design studio
                             </div>
                         </div>
-                        <img class="w-[75px] h-[75px] object-cover rounded-full order-1 invisible peer-hover:visible"
-                             src="assets/images/vn.png" alt="">
+                        
 
                     </div>
-                    <div class="w-max flex gap-[80px] translate-x-0 justify-end mt-[100px]">
-                        <div class="self-end relative order-2 peer">
-                            <div class=" relative z-10 text-lg text-white bg-black px-4"> SINGAPO</div>
-                            <div class="text-white text-lg p-9 border border-white rounded-2xl absolute top-[10px] min-w-[280px]">
+                    <div class="w-max flex gap-4 md:gap-[60px]lg:gap-[80px] translate-x-[48px] md:translate-x-[38px] lg:-translate-x-4  translate-y-6 justify-end mt-[40px] md:mt-[100px]">
+                        <img class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] lg:w-[75px] lg:h-[75px]  rounded-full  peer"
+                        src="assets/images/singapo.png" alt="">
+
+                        <div class="self-end relative invisible peer-hover:visible">
+                            <div class=" relative z-10 text-sm md:text-lg text-white bg-black px-4"> SINGAPORE</div>
+                            <div class="text-white text-sm md:text-lg p-5 md:p-9 border border-white rounded-2xl absolute top-[10px] min-w-[180px] md:min-w-[280px]">
                                 Base of operation
                             </div>
                         </div>
-                        <img class="w-[75px] h-[75px]  rounded-full order-1 invisible peer-hover:visible"
-                             src="assets/images/singapo.png" alt="">
-
+                       
                     </div>
 
                 </div>
-                <div class="w-1/2 pt-[100px]">
-                       <div class="flex flex-col items-end gap-12 flex-1">
-                        <svg class="folower"  width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="w-1/2 lg:pt-[100px]">
+                       <div class="flex flex-col items-end gap-3  md:gap-8 lg:gap-12 flex-1">
+                        <svg  class="w-[40px] md:w-[50px]"  width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M30.0306 35.6732C-9.676 75.0582 -9.676 -9.59771 30.0306 29.7873C-9.676 -9.59771 75.6713 -9.59771 35.9647 29.7873C75.6713 -9.59771 75.6713 75.0582 35.9647 35.6732C75.6713 75.0582 -9.676 75.0582 30.0306 35.6732Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
                             </svg>
 
-                            <svg class="folower" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-[40px] md:w-[50px]"  width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M30.0306 35.6732C-9.676 75.0582 -9.676 -9.59771 30.0306 29.7873C-9.676 -9.59771 75.6713 -9.59771 35.9647 29.7873C75.6713 -9.59771 75.6713 75.0582 35.9647 35.6732C75.6713 75.0582 -9.676 75.0582 30.0306 35.6732Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
                                 </svg>
 
-                                <svg class="folower" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg  class="w-[40px] md:w-[50px]" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M30.0306 35.6732C-9.676 75.0582 -9.676 -9.59771 30.0306 29.7873C-9.676 -9.59771 75.6713 -9.59771 35.9647 29.7873C75.6713 -9.59771 75.6713 75.0582 35.9647 35.6732C75.6713 75.0582 -9.676 75.0582 30.0306 35.6732Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
                                     </svg>
 
@@ -1101,15 +1174,25 @@
 
 
                        </div>
-                    <div class="flex gap-8 justify-end items-center mt-24">
-                        <div class="text-white font-bold text-lg">
+                    <div class="hidden md:flex flex lg:gap-8 justify-between lg:justify-end items-center mt-[100px] md:mt-24">
+                        <div class="text-white font-bold  text-sm lg:text-lg">
                             Ready to embark on your journey?
                         </div>
                         <div>
-                            <button class="border-spiner py-4 px-7   text-white flex items-center gap-4 mb-4 ">
-                                <span class="font-bold text-lg ">EXPLORE NOW</span>
+                            <button class="border-spiner py-4 px-2 lg:px-7  text-white flex items-center gap-4 lg:mb-4 ">
+                                <span class="font-bold text-sm lg:text-lg ">EXPLORE NOW</span>
                             </button>
                         </div>
+                    </div>
+                </div>
+                <div class=" w-full  flex md:hidden lg:gap-8 justify-around items-center mt-16">
+                    <div class="text-white font-bold  text-sm lg:text-lg">
+                        Ready to embark on your journey?
+                    </div>
+                    <div>
+                        <button class="border-spiner py-4 px-2 lg:px-7  text-white flex items-center gap-4 lg:mb-4 ">
+                            <span class="font-bold text-sm lg:text-lg ">EXPLORE NOW</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1117,15 +1200,15 @@
         </div>
     </div>
 
-    <div class="flex h-[200px] container mx-auto px-10 items-center mt-32">
-        <div class="font-bold text-[50px] mr-[400px] ">
+    <div class="flex flex-row gap-4 lg:gap-0 container mx-auto px-4 lg:px-10 items-start mt-32">
+        <div class="font-bold text-xl md:text-3xl lg:text-[50px] lg:mr-[100px] ">
             <span class="text-white">OUR </span>
             <span class="text-primary">MISSION</span>
         </div>
-        <div class="text-white text-[36px] font-bold uppercase flex-1">
+        <div class="text-white  text-base md:text-2xl font-bold uppercase flex-1">
             To create <span class="text-primary">extraordinary</span>
-              <br>
             <span class="text-primary">products</span>
+            <br>
             at the  crossroads of
             <span class="text-secondary">physical and digital</span>
 
@@ -1133,10 +1216,10 @@
 
     </div>
 </div>
-<div class="h-[1px] bg-white container mx-auto px-10 my-8"></div>
-<div class="container mx-auto px-10">
+<div class="h-[1px] bg-white container mx-auto lg:px-10 my-8"></div>
+<div class="container mx-auto lg:px-10 mt-8 lg:mt-16">
     <div class="flex gap-16">
-        <div class="font-bold text-[40px]">
+        <div class="font-bold text-xl md:text-2xl lg:text-[40px]">
             <span class="text-secondary">LATEST</span> <span class="text-white">COLLECTION</span>
         </div>
         <div class="flex gap-8">
@@ -1152,20 +1235,20 @@
 
         </div>
     </div>
-    <div class="flex gap-8 my-12">
-        <div class=" scale-img w-[312px] overflow-hidden h-[400px]">
+    <div class="flex my-12 overflow-y-auto">
+        <div class=" scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  w-[312px] overflow-hidden h-[250px] lg:h-[400px]">
             <img class="w-full object-center h-full"
                  src="assets/images/products/clothes.webp" alt="">
         </div>
-        <div class="scale-img w-[312px] overflow-hidden h-[400px]">
+        <div class="scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  w-[312px] overflow-hidden h-[250px] lg:h-[400px]">
             <img class="w-full object-center h-full"
                  src="assets/images/products/clothes2.webp" alt="">
         </div>
-        <div class=" scale-img w-[312px] overflow-hidden h-[400px]">
+        <div class=" scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  w-[312px] overflow-hidden h-[250px] lg:h-[400px]">
             <img class="w-full object-center h-full" src="assets/images/products/ring.webp"
                  alt="">
         </div>
-        <div class=" scale-img w-[312px] overflow-hidden h-[400px]">
+        <div class=" scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  w-[312px] overflow-hidden h-[250px] lg:h-[400px]">
             <img class="w-full object-center h-full"
                  src="assets/images/products/ring2.webp" alt="">
         </div>
@@ -1177,9 +1260,9 @@
 
 </div>
 <footer class="bg-white">
-    <div class="container mx-auto flex justify-between p-10 ">
+    <div class="container mx-auto flex justify-between lg:px-10 py-10 ">
         <div>
-            <svg width="298" height="53" viewBox="0 0 298 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class=" w-[250px] md:w-[200px] lg:w-[298px]" height="53" viewBox="0 0 298 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_298_349)">
                     <path d="M79.8199 32.8802C79.8199 32.7302 79.8899 32.6602 80.0399 32.6602H83.3699C83.5199 32.6602 83.5899 32.7302 83.5899 32.8802V43.6402C83.5899 43.7502 83.64 43.8002 83.7299 43.8002C83.7699 43.8002 83.7999 43.7802 83.8399 43.7502L95.0699 32.6902C95.0699 32.6902 95.1099 32.6602 95.1499 32.6602H100.16C100.22 32.6602 100.25 32.6802 100.27 32.7302C100.29 32.7802 100.27 32.8202 100.24 32.8502L91.3299 41.6502C91.2799 41.7002 91.2799 41.7702 91.3299 41.8402L101.8 52.3002C101.8 52.3002 101.84 52.3802 101.81 52.4402C101.78 52.4902 101.75 52.5202 101.72 52.5202H96.8399C96.8399 52.5202 96.7899 52.5002 96.7599 52.4702L88.6699 44.4902C88.6699 44.4902 88.5999 44.4402 88.5599 44.4402C88.5199 44.4402 88.4899 44.4602 88.4499 44.4902L83.6299 49.2302C83.6299 49.2302 83.5999 49.2802 83.5999 49.3402V52.3102C83.5999 52.4602 83.5299 52.5302 83.3799 52.5302H80.0499C79.8999 52.5302 79.8299 52.4602 79.8299 52.3102V32.8802H79.8199Z"
                           fill="black"/>
@@ -1221,7 +1304,7 @@
                     </clipPath>
                 </defs>
             </svg>
-           <div class="text-lg mt-8">
+           <div class="text-xs md:text-sm lg:text-lg mt-8">
                COPYRIGHT © 2023 -- KK FIGITAL PTE. LTD. -- ALL RIGHTS RESERVED
            </div>
 
@@ -1253,7 +1336,7 @@
                 </svg>
 
             </div>
-            <div class="flex gap-4 text-lg mt-8">
+            <div class="flex flex-col md:flex-row gap-4 md:gap-4 text-xs md:text-sm lg:text-lg mt-8">
                 <div>
                     PRIVACY POLICY
                 </div>

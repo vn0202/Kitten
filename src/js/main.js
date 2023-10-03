@@ -32,4 +32,30 @@ document.addEventListener('load', () => {
     myVideo.preload;
 
 })
+// change brand text and image
+const images = ['assets/images/products/sneaker.png','assets/images/products/sunfollower.avif','assets/images/products/dua.avif' ];
+const textShow = ['BRAND', 'COLLECTIBLES', 'MERCH'];
+const brandTexts = document.querySelectorAll('#brand-text span');
+const glitchImg = document.getElementById('glitch-image');
+const glitchLayers = document.querySelectorAll('img.glitch__layer');
+
+
+let indexText = 0;
+setInterval(()=>{
+      indexText++;
+      if(indexText > 2){
+        indexText=0;
+      }
+    for (let index = 0; index < brandTexts.length; index++) {
+    const element = brandTexts[index];
+    element.innerHTML = textShow[indexText]
+    }
+
+    // glitchImg.src=images[indexText];
+    // for (let index = 0; index < glitchLayers.length; index++) {
+    //     const element = glitchLayers[index];
+    //     element.src=images[indexText];
+    //     }
+
+},3000)
 
