@@ -33,29 +33,32 @@ document.addEventListener('load', () => {
 
 })
 // change brand text and image
-const images = ['assets/images/products/sneaker.png','assets/images/products/sunfollower.avif','assets/images/products/dua.avif' ];
-const textShow = ['BRAND', 'COLLECTIBLES', 'MERCH'];
-const brandTexts = document.querySelectorAll('#brand-text span');
-const glitchImg = document.getElementById('glitch-image');
-const glitchLayers = document.querySelectorAll('img.glitch__layer');
+const images = ['assets/images/products/sneaker.png','assets/images/products/tako_guy_2.png','assets/images/products/key_cap.png' ];
+const brand = document.getElementById('brand-text');
+const suspended = document.getElementById('suspended');
+suspended.style.width='70%';
+const text = ["BRAND", "Collectibles", "Merch"];
+let index = 0;
+     setInterval(()=>{
+         index++;
+         brand.innerHTML = text[index];
+         if(index ==1)
+         {
+          suspended.style.width='100%'
+         }
+         else{
+          
+            suspended.style.width='70%'
+           
+         }
+         suspended.src=images[index];
 
+         if(index == 2 )
+         {
+             index=-1;
+         }
+        
+       
+       
 
-let indexText = 0;
-setInterval(()=>{
-      indexText++;
-      if(indexText > 2){
-        indexText=0;
-      }
-    for (let index = 0; index < brandTexts.length; index++) {
-    const element = brandTexts[index];
-    element.innerHTML = textShow[indexText]
-    }
-
-    // glitchImg.src=images[indexText];
-    // for (let index = 0; index < glitchLayers.length; index++) {
-    //     const element = glitchLayers[index];
-    //     element.src=images[indexText];
-    //     }
-
-},3000)
-
+     },2000)
