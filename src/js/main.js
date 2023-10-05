@@ -1,3 +1,4 @@
+
 function move_scroll(){
     const followers = document.getElementsByClassName('folower');
     const element = followers[0];
@@ -36,29 +37,62 @@ document.addEventListener('load', () => {
 const images = ['assets/images/products/sneaker.png','assets/images/products/tako_guy_2.png','assets/images/products/key_cap.png' ];
 const brand = document.getElementById('brand-text');
 const suspended = document.getElementById('suspended');
-suspended.style.width='70%';
+// suspended.style.width='70%';
 const text = ["BRAND", "Collectibles", "Merch"];
 let index = 0;
      setInterval(()=>{
          index++;
+         if(index > 2 )
+         {
+             index=0;
+         }
+
          brand.innerHTML = text[index];
-         if(index ==1)
-         {
-          suspended.style.width='100%'
-         }
-         else{
-          
-            suspended.style.width='70%'
-           
-         }
          suspended.src=images[index];
-
-         if(index == 2 )
-         {
-             index=-1;
-         }
-        
-       
-       
-
      },2000)
+
+const test2 = document.getElementById('test-2');
+const test3 = document.getElementById('test-3');
+let previousScrollY =0;
+let scrollUp = false;
+
+window.addEventListener('scroll', function (e){
+    const test = document.getElementById('test');
+    let rect = test.getBoundingClientRect();
+    const currentScrollY = window.scrollY;
+    let translateFirst = 50;
+    let translateTwo = 100
+   if(window.innerWidth > 375 && window.innerWidth < 1200)
+   {
+       translateFirst= 25;
+       translateTwo = 50;
+   }
+
+    if (currentScrollY > previousScrollY) {
+        scrollUp = false
+    } else if (currentScrollY < previousScrollY) {
+       scrollUp = true;
+    }
+
+    previousScrollY = currentScrollY;
+    if(rect.y < window.innerHeight -50  && !scrollUp)
+    {
+        test.style.transform = `translateX(${translateFirst}px)`;
+        test2.style.transform = `translateX(${translateTwo}px)`;
+        test2.style.transitionDelay = "500ms";
+        test3.style.left = `${translateTwo}px`;
+        test3.style.transitionDelay = "1s";
+    }
+    else{
+        test.style.transform = "translateX(-4px)";
+        test2.style.transform = "translateX(0)";
+        test2.style.transitionDelay = "500ms";
+        test3.style.left = "0";
+    }
+    console.log(rect.y, window.innerHeight);
+
+},false)
+
+
+
+

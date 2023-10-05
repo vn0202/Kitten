@@ -11,6 +11,17 @@
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
     }
+    #brand-text{
+        position: relative;
+        font-size: 3rem;
+        color: #0e3742;
+        text-transform: uppercase;
+        width: 100%;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #000);
+        line-height: 0.70em;
+        outline: none;
+        animation: animate 2s linear infinite;
+    }
     body{
          display: flex;
          justify-content: center;
@@ -22,33 +33,33 @@
   
 </style>
 <body>
-    <h2 contenteditable="true" id="test"></h2>
+    <h2 id="brand-text"></h2>
     <script>
               
         
-    //     const text = ['B', "R", 'A',"N", "D"];
-    //     const brand = document.getElementById('test');
-    //     let index = -1;
-    //   let id= setInterval(function(){
-    //         index++;
-    //         let node = document.createTextNode(text[index]);
-    //        if(index ==text.length-1)
-    //        {
-    //         clearInterval(id);
-    //         let a= setInterval(()=>{
-    //             let string = brand.innerHTML;
-    //           if(string.length > 0)
-    //           {
-    //             brand.innerText = string.slice(0,string.length-1 )
-    //           }
-    //           else{
-    //             clearInterval(a);
-    //           }
+        const text = ["brand", "Collectibe", "Merch"];
+        const brand = document.getElementById('test');
+        let index = -1;
+      let id= setInterval(function(){
+            index++;
+            let node = document.createTextNode(text[index]);
+           if(index ==text.length-1)
+           {
+            clearInterval(id);
+            let a= setInterval(()=>{
+                let string = brand.innerHTML;
+              if(string.length > 0)
+              {
+                brand.innerText = string.slice(0,string.length-1 )
+              }
+              else{
+                clearInterval(a);
+              }
             
-    //         },300)
-    //        }
-    //        brand.appendChild(node);
-    //     },400);
+            },300)
+           }
+           brand.appendChild(node);
+        },400);
     </script>
     
 </body>

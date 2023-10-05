@@ -398,4 +398,14 @@
         background-size: 50% 400px;
       }
     }
-   
+
+
+  #test{
+    transition: all 2s ease ;
+  }
+  #test-2{
+    transition: all 1s ease ;
+  }
+  #test-3{
+    transition: all 1s ease ;
+  }
