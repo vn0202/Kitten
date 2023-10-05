@@ -1310,6 +1310,10 @@ video {
     margin-top: 186px;
   }
 
+  .md\:mt-\[132px\] {
+    margin-top: 132px;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -1517,6 +1521,10 @@ video {
 
   .lg\:mt-\[300px\] {
     margin-top: 300px;
+  }
+
+  .lg\:mt-\[56px\] {
+    margin-top: 56px;
   }
 
   .lg\:block {
