@@ -47,7 +47,8 @@ let index = 0;
              index=0;
          }
 
-         brand.innerHTML = text[index];
+         brand.innerHTML = `<span>${text[index]}</span>`;
+         brand.dataset.text=text[index];
          suspended.src=images[index];
      },2000)
 
@@ -89,7 +90,6 @@ window.addEventListener('scroll', function (e){
         test2.style.transitionDelay = "500ms";
         test3.style.left = "0";
     }
-    console.log(rect.y, window.innerHeight);
 
 },false)
 

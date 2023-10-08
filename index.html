@@ -151,13 +151,15 @@
            </svg>
 
        </div>
+
        <div class="flex flex-col	 md:flex-row gap-4">
+
            <div class="md:w-1/2">
                <div class="font-bold text-[28px] text-center  md:text-left md:text-[35px] lg:text-[45px] mb-10 ">
                    <span class="text-white">LAUNCH YOUR OWN </span>
-                   <p id="brand-text" class=" mb-16 md:mb-[100px]">
-                    BRAND
-                   </p>
+                   <div class="hero-container">
+                       <h2 class="hero glitch layers" data-text="Brand" id="brand-text" ><span>Brand</span></h2>
+                   </div>
                </div>
                <div class="h-[1px] bg-white mb-10 w-full md:w-3/4 "></div>
 
@@ -208,7 +210,7 @@
                      </svg>
                  </div>
                    <div class="relative h-[400px] md:h-[700px] -translate-x-[40px] md:translate-x-0 ">
-                    <img  id="suspended"  class="absolute top-[71px] md:top-[200px] -left-[14px] md:-left-[81px] lg:-left-1 w-[250px] md:w-[360px] lg:w-[576px]" src="./assets/images/products/sneaker.png" alt="">
+                    <img  id="suspended"  class="absolute top-[71px] md:top-[200px] -left-[14px] md:-left-[81px] lg:-left-1 w-[250px] md:w-[360px] lg:w-[450px]" src="./assets/images/products/sneaker.png" alt="">
                    </div>
                </div>
              <div class="flex flex-col gap-6 absolute bottom-[100px] right-0">
@@ -903,7 +905,7 @@
 
            </div>
        </div>
-       <div class="flex  flex-col md:flex-row md:mb-[156px] lg:mb-0">
+       <div class="flex flex-col md:flex-row mb-40">
            <div class="md:w-1/2 " >
                 <video class="max-w-full h-full w-full" autoplay muted loop >
                     <source src="./assets//videos/figure_tranform.mp4" type="video/mp4">
@@ -1098,26 +1100,46 @@
             </div>
 
            <div class="flex my-12 w-full overflow-y-auto">
-               <div class="scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6">
-                   <img class=" w-full object-contain h-full"
-                        src="assets/images/whyus/img_1.png" alt="">
+               <div style="flex-shrink: 0" class=" w-1/2 md:w-1/3 lg:w-1/4 group px-4">
+                   <div class="relative">
+                       <img class=" group-hover:rounded-tl-3xl  w-full object-contain h-full"
+                            src="assets/images/whyus/img_1.png" alt="">
+                       <div class="hidden group-hover:flex absolute left-0 bottom-0 px-2 right-0 text-lg bg-white h-[132px] items-center ">
+                           Figitals command a higher price point.
+                       </div>
+                   </div>
+
                </div>
-               <div class="scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  ">
-                   <img class=" w-full object-contain h-full"
-                        src="assets/images/whyus/img.png" alt="">
+               <div style="flex-shrink: 0" class=" w-1/2 md:w-1/3 lg:w-1/4 group px-4">
+                   <div class="relative">
+                       <img class=" group-hover:rounded-tl-3xl  w-full object-contain h-full"
+                            src="assets/images/whyus/img.png" alt="">
+                       <div class="hidden group-hover:flex h-[132px] justify-center items-center absolute left-0 bottom-0 px-2 right-0 text-xs md:text-sm lg:text-lg bg-white">
+                           Elevate the level of immersion through the incorporation of content, such as backstory videos and music.                       </div>
+                   </div>
+
                </div>
 
-               <div class=" scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6 ">
-                   <img class=" object-contain w-full h-full" src="assets/images/whyus/img_2.png"
-                        alt="">
+               <div style="flex-shrink: 0" class=" w-1/2 md:w-1/3 lg:w-1/4 group px-4">
+                   <div class="relative">
+                       <img class=" group-hover:rounded-tl-3xl  w-full object-contain h-full"
+                            src="assets/images/whyus/img_2.png" alt="">
+                       <div class="hidden group-hover:flex h-[132px] text-xs md:text-sm lg:text-lg justify-center items-center absolute left-0 bottom-0 px-2 right-0 text-lg bg-white py-10">
+                           Encourage revisits and boost users' retention with figitals.
+                       </div>
+                   </div>
+
                </div>
-               <div class="scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6 ">
-                   <img class=" object-contain w-full h-full"
-                        src="assets/images/whyus/img_3.png" alt="">
+               <div style="flex-shrink: 0" class=" w-1/2 md:w-1/3 lg:w-1/4 group px-4">
+                   <div class="relative">
+                       <img class=" group-hover:rounded-tl-3xl  w-full object-contain h-full"
+                            src="assets/images/whyus/img_3.png" alt="">
+                       <div class="hidden group-hover:flex h-[132px] justify-center items-center absolute left-0 bottom-0 px-2 right-0 text-xs md:text-sm lg:text-lg bg-white py-10">
+                           Authenticate legitimacy with Near-field Communication (NFC) and Non-Fungible Token (NFT).                       </div>
+                   </div>
+
                </div>
-               <!-- <div class="w-[312px]">
-                   <img  class="border border-white rounded-2xl object-contain h-full"  src="../assets/images/products/dua.avif" alt="">
-               </div> -->
+
            </div>
 
 
@@ -1258,25 +1280,65 @@
         </div>
     </div>
     <div class="flex my-12 overflow-y-auto">
-        <div class=" scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  w-[312px] overflow-hidden h-[250px] lg:h-[400px]">
-            <img class="w-full object-center h-full"
-                 src="assets/images/products/clothes.webp" alt="">
+
+        <div  style="flex-shrink: 0" class="  w-1/2 md:w-1/3 lg:w-1/4 px-4 overflow-hidden group h-[250px] lg:h-[400px]">
+            <img class="border border-white rounded-2xl w-full object-cover h-full group-hover:hidden"
+                 src="assets/images/products/dua.avif" alt="">
+            <img class="border border-white rounded-2xl w-full object-cover h-full"
+                 src="assets/images/products/dua2.jpg" alt="">
         </div>
-        <div class="scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  w-[312px] overflow-hidden h-[250px] lg:h-[400px]">
-            <img class="w-full object-center h-full"
-                 src="assets/images/products/clothes2.webp" alt="">
-        </div>
-        <div class=" scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  w-[312px] overflow-hidden h-[250px] lg:h-[400px]">
-            <img class="w-full object-center h-full" src="assets/images/products/ring.webp"
+        <div  style="flex-shrink: 0" class="  group  w-1/2 md:w-1/3 lg:w-1/4 px-4  overflow-hidden h-[250px] lg:h-[400px]">
+            <img class="border border-white rounded-2xl w-full object-fill h-full group-hover:hidden" src="assets/images/products/sunfollower.avif"
+                 alt="">
+            <img class="border border-white rounded-2xl w-full object-cover h-full " src="assets/images/products/sunfollower2.jpg"
                  alt="">
         </div>
-        <div class=" scale-img min-w-[209px] w-1/3 ld:w-1/4 mx-6  w-[312px] overflow-hidden h-[250px] lg:h-[400px]">
-            <img class="w-full object-center h-full"
-                 src="assets/images/products/ring2.webp" alt="">
+        <div  style="flex-shrink: 0" class="  group w-1/2 md:w-1/3 lg:w-1/4 px-4 overflow-hidden h-[250px] lg:h-[400px]">
+            <video class="border border-white rounded-2xl h-full w-full group-hover:hidden" autoplay muted loop>
+                <source src="./assets//videos/lego.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <img class="border border-white rounded-2xl w-full object-cover h-full " src="assets/images/products/leg02.jpg"
+                 alt="">
         </div>
-        <!-- <div class="w-[312px]">
-            <img  class="border border-white rounded-2xl object-contain h-full"  src="../assets/images/products/dua.avif" alt="">
-        </div> -->
+        <div  style="flex-shrink: 0" class="  group w-1/2 md:w-1/3 lg:w-1/4 px-4 overflow-hidden h-[250px] lg:h-[400px]">
+            <img class="border border-white rounded-2xl w-full object-fill h-full group-hover:hidden" src="assets/images/products/clothes-black.webp"
+                 alt="">
+            <img class="border border-white rounded-2xl w-full object-cover h-full " src="assets/images/products/clothes-black2.jpg"
+                 alt="">
+        </div>
+        <div  style="flex-shrink: 0" class="  group w-1/2 md:w-1/3 lg:w-1/4 px-4 overflow-hidden h-[250px] lg:h-[400px]">
+            <img class="border border-white rounded-2xl w-full object-fill h-full group-hover:hidden" src="assets/images/products/clothes-white.webp"
+                 alt="">
+            <img class="border border-white rounded-2xl w-full object-cover h-full " src="assets/images/products/clothes-white2.jpg"
+                 alt="">
+        </div>
+        <div  style="flex-shrink: 0" class="  group w-1/2 md:w-1/3 lg:w-1/4 px-4 overflow-hidden h-[250px] lg:h-[400px]">
+
+            <video class="border border-white rounded-2xl h-full w-full group-hover:hidden" autoplay muted loop>
+                <source src="./assets//videos/sneaker-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
+            <img class="border border-white rounded-2xl w-full object-fill h-full " src="assets/images/products/sneaker2.webp"
+                 alt="">
+        </div>
+        <div  style="flex-shrink: 0" class="  group w-1/2 md:w-1/3 lg:w-1/4 px-4 overflow-hidden h-[250px] lg:h-[400px]">
+            <img class="border border-white rounded-2xl w-full object-cover h-full group-hover:hidden" src="assets/images/products/ring.webp"
+                 alt="">
+            <img class="border border-white rounded-2xl w-full object-cover h-full " src="assets/images/products/ring2.jpg"
+                 alt="">
+        </div>
+        <div  style="flex-shrink: 0" class="  group w-1/2 md:w-1/3 lg:w-1/4 px-4 overflow-hidden h-[250px] lg:h-[400px]">
+            <img class="border border-white rounded-2xl w-full object-cover h-full group-hover:hidden" src="assets/images/products/ring-sliver.webp"
+                 alt="">
+            <img class="border border-white rounded-2xl w-full object-cover h-full " src="assets/images/products/ring-sliver2.jpg"
+                 alt="">
+        </div>
+
+
     </div>
 
 

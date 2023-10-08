@@ -1,66 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    #brand-text{
-        position: relative;
-        font-size: 3rem;
-        color: #0e3742;
-        text-transform: uppercase;
-        width: 100%;
-        -webkit-box-reflect: below 1px linear-gradient(transparent, #000);
-        line-height: 0.70em;
-        outline: none;
-        animation: animate 2s linear infinite;
-    }
-    body{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         min-width: 100vh;
-         background-color: black;
-
-    }
-  
-</style>
+<html>
 <body>
-    <h2 id="brand-text"></h2>
-    <script>
-              
-        
-        const text = ["brand", "Collectibe", "Merch"];
-        const brand = document.getElementById('test');
-        let index = -1;
-      let id= setInterval(function(){
-            index++;
-            let node = document.createTextNode(text[index]);
-           if(index ==text.length-1)
-           {
-            clearInterval(id);
-            let a= setInterval(()=>{
-                let string = brand.innerHTML;
-              if(string.length > 0)
-              {
-                brand.innerText = string.slice(0,string.length-1 )
-              }
-              else{
-                clearInterval(a);
-              }
-            
-            },300)
-           }
-           brand.appendChild(node);
-        },400);
-    </script>
-    
+
+<svg height="150" width="400">
+    <defs>
+        <clipPath id="theClipPath">
+            <rect id="theSquare" x="100" y="100" width="1000" height="1000" fill="#ccc" />
+        </clipPath>
+    </defs>
+    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#theClipPath)" />
+    Sorry, your browser does not support inline SVG.
+</svg>
+
 </body>
 </html>
