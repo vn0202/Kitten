@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400;1,6..12,800&display=swap" rel="stylesheet">
@@ -1201,19 +1202,22 @@
                 <div class="w-1/2 lg:pt-[100px]">
                     <div class="flex justify-end">
 
-                        <div class="flex flex-col items-end gap-3  md:gap-8 lg:gap-12">
-                            <svg  class="w-[40px] md:w-[50px]"  width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30.0306 35.6732C-9.676 75.0582 -9.676 -9.59771 30.0306 29.7873C-9.676 -9.59771 75.6713 -9.59771 35.9647 29.7873C75.6713 -9.59771 75.6713 75.0582 35.9647 35.6732C75.6713 75.0582 -9.676 75.0582 30.0306 35.6732Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
-                            </svg>
-
-                            <svg class="w-[40px] md:w-[50px]"  width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30.0306 35.6732C-9.676 75.0582 -9.676 -9.59771 30.0306 29.7873C-9.676 -9.59771 75.6713 -9.59771 35.9647 29.7873C75.6713 -9.59771 75.6713 75.0582 35.9647 35.6732C75.6713 75.0582 -9.676 75.0582 30.0306 35.6732Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
-                            </svg>
-
-                            <svg  class="w-[40px] md:w-[50px]" width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M30.0306 35.6732C-9.676 75.0582 -9.676 -9.59771 30.0306 29.7873C-9.676 -9.59771 75.6713 -9.59771 35.9647 29.7873C75.6713 -9.59771 75.6713 75.0582 35.9647 35.6732C75.6713 75.0582 -9.676 75.0582 30.0306 35.6732Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
-                            </svg>
-
+                        <div class="flex  items-end  mt-[100px] md:mt-0">
+                            <svg id="demo" width="67" height="231" viewBox="0 0 67 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="theClipPath">
+                                      <rect id="theSquare" x="0" y="300" width="500" height="150" fill="#fff" />
+                                    </clipPath>  
+                                    </defs> 
+                                    <g id="clipPathReveal" clip-path="url(#theClipPath)">
+                                        <path d="M30.7799 36.4247C-8.92673 75.8097 -8.92673 -8.84625 30.7799 30.5387C-8.92673 -8.84625 76.4206 -8.84624 36.7139 30.5387C76.4206 -8.84624 76.4205 75.8097 36.7139 36.4247C76.4205 75.8097 -8.92673 75.8097 30.7799 36.4247Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
+                                        <path d="M30.7799 118.388C-8.92673 157.773 -8.92673 73.1171 30.7799 112.502C-8.92673 73.1171 76.4206 73.1171 36.7139 112.502C76.4206 73.1171 76.4205 157.773 36.7139 118.388C76.4205 157.773 -8.92673 157.773 30.7799 118.388Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
+                                        <path d="M30.7799 200.351C-8.92673 239.736 -8.92673 155.081 30.7799 194.465C-8.92673 155.081 76.4206 155.081 36.7139 194.465C76.4206 155.081 76.4205 239.736 36.7139 200.351C76.4205 239.736 -8.92673 239.736 30.7799 200.351Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
+                                      </g>
+                                <path d="M30.7799 36.4247C-8.92673 75.8097 -8.92673 -8.84625 30.7799 30.5387C-8.92673 -8.84625 76.4206 -8.84624 36.7139 30.5387C76.4206 -8.84624 76.4205 75.8097 36.7139 36.4247C76.4205 75.8097 -8.92673 75.8097 30.7799 36.4247Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
+                                <path d="M30.7799 118.388C-8.92673 157.773 -8.92673 73.1171 30.7799 112.502C-8.92673 73.1171 76.4206 73.1171 36.7139 112.502C76.4206 73.1171 76.4205 157.773 36.7139 118.388C76.4205 157.773 -8.92673 157.773 30.7799 118.388Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
+                                <path d="M30.7799 200.351C-8.92673 239.736 -8.92673 155.081 30.7799 194.465C-8.92673 155.081 76.4206 155.081 36.7139 194.465C76.4206 155.081 76.4205 239.736 36.7139 200.351C76.4205 239.736 -8.92673 239.736 30.7799 200.351Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
+                                </svg>
                         </div>
                     </div>
 

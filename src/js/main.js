@@ -67,11 +67,24 @@ window.addEventListener('scroll', function (e){
    {
        translateFirst= 25;
        translateTwo = 50;
-   }
+   } 
 
     if (currentScrollY > previousScrollY) {
-        scrollUp = false
+        scrollUp = false;
+       
+            TweenMax.set ("#demo", {xPercent:-50, yPercent:-50});
+            TweenMax.from("#theSquare", 5, {attr:{y:-100}, yoyo:true, repeat:0, ease:Linear.easeNone});
+            TweenMax.to('#theSquare',5, {attr:{y:300}, yoyo:true, repeat:0, ease:Linear.easeNone})
+          
+            
+
+    
+       
+
     } else if (currentScrollY < previousScrollY) {
+
+       
+       
        scrollUp = true;
     }
 
@@ -92,6 +105,8 @@ window.addEventListener('scroll', function (e){
     }
 
 },false)
+
+        
 
 
 

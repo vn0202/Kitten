@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;justify-content: center;
+  align-items: center;
+}
+
+#demo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: auto;
+  height: auto;
+  max-height: 90%;
+  max-width: 90%;
+}
+body{
+    background: black;
+}
+    </style>
+</head>
 <body>
+    <svg id="demo" width="67" height="231" viewBox="0 0 67 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <clipPath id="theClipPath">
+              <rect id="theSquare" x="0" y="-200" width="500" height="200" fill="#fff" />
+            </clipPath>  
+            </defs> 
+            <g id="clipPathReveal" clip-path="url(#theClipPath)">
+                <path d="M30.7799 36.4247C-8.92673 75.8097 -8.92673 -8.84625 30.7799 30.5387C-8.92673 -8.84625 76.4206 -8.84624 36.7139 30.5387C76.4206 -8.84624 76.4205 75.8097 36.7139 36.4247C76.4205 75.8097 -8.92673 75.8097 30.7799 36.4247Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
+                <path d="M30.7799 118.388C-8.92673 157.773 -8.92673 73.1171 30.7799 112.502C-8.92673 73.1171 76.4206 73.1171 36.7139 112.502C76.4206 73.1171 76.4205 157.773 36.7139 118.388C76.4205 157.773 -8.92673 157.773 30.7799 118.388Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
+                <path d="M30.7799 200.351C-8.92673 239.736 -8.92673 155.081 30.7799 194.465C-8.92673 155.081 76.4206 155.081 36.7139 194.465C76.4206 155.081 76.4205 239.736 36.7139 200.351C76.4205 239.736 -8.92673 239.736 30.7799 200.351Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
+              </g>
+        <path d="M30.7799 36.4247C-8.92673 75.8097 -8.92673 -8.84625 30.7799 30.5387C-8.92673 -8.84625 76.4206 -8.84624 36.7139 30.5387C76.4206 -8.84624 76.4205 75.8097 36.7139 36.4247C76.4205 75.8097 -8.92673 75.8097 30.7799 36.4247Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
+        <path d="M30.7799 118.388C-8.92673 157.773 -8.92673 73.1171 30.7799 112.502C-8.92673 73.1171 76.4206 73.1171 36.7139 112.502C76.4206 73.1171 76.4205 157.773 36.7139 118.388C76.4205 157.773 -8.92673 157.773 30.7799 118.388Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
+        <path d="M30.7799 200.351C-8.92673 239.736 -8.92673 155.081 30.7799 194.465C-8.92673 155.081 76.4206 155.081 36.7139 194.465C76.4206 155.081 76.4205 239.736 36.7139 200.351C76.4205 239.736 -8.92673 239.736 30.7799 200.351Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
+        </svg>
+        
+        
+  
+        
+        
+  
+    <script>
+        TweenMax.set ("#demo", {xPercent:-50, yPercent:-50});
+TweenMax.from("#theSquare", 5, {attr:{y:-500}, yoyo:true, repeat:-1, ease:Linear.easeNone});
 
-<svg height="150" width="400">
-    <defs>
-        <clipPath id="theClipPath">
-            <rect id="theSquare" x="100" y="100" width="1000" height="1000" fill="#ccc" />
-        </clipPath>
-    </defs>
-    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#theClipPath)" />
-    Sorry, your browser does not support inline SVG.
-</svg>
-
+    </script>
 </body>
 </html>
