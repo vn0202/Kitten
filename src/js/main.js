@@ -58,7 +58,7 @@ let index = 0;
 
              }else if (index==2) {
                  suspended.style.width = "70%";
-                 suspended.style.bottom ="150px"
+                 suspended.style.bottom ="160px"
              }
              else {
                  suspended.style.width = "80%";
