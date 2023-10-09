@@ -62,7 +62,7 @@ let index = 0;
              }
              else {
                  suspended.style.width = "80%";
-                 suspended.style.bottom ="100px"
+                 suspended.style.bottom ="70px"
              }
          }
 
