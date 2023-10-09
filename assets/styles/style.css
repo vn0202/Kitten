@@ -90,7 +90,7 @@
     overflow-x: hidden;
     width: calc(245px *18);
     gap:8px;
-    animation: scroll 16s linear infinite;
+    animation: scroll 20s linear infinite;
     justify-content: center;
     align-content: center;
     padding:20px;
@@ -370,16 +370,16 @@
     }
     /* suspended image */
     #suspended{
-      animation: suspended 1s ease-in-out infinite;
+      animation: suspended 1s ease-in-out infinite alternate-reverse;
     }
     
     @keyframes suspended {
       0%{
-        transform: translateY(20px) translateX(96px) ;
+        transform: translateY(20px) ;
 
       }
       100%{
-        transform: translateY(0px) translateX(96px);
+        transform: translateY(0px) ;
       }
     }
     #map{
@@ -415,10 +415,9 @@
   }
 
   .hero {
-    font-size: clamp(40px, 50px, 50px);
     line-height: 1;
     display: inline-block;
-    color: #fff;
+    color: #E53988;
     z-index: 2;
     letter-spacing: 10px;
 
@@ -838,31 +837,31 @@
   @keyframes font {
     0% {
       font-weight: 100;
-      color: #e0287d;
+      color: #E53988;
       filter: blur(3px);
     }
 
     20% {
       font-weight: 500;
-      color: #fff;
+      color: #E53988;
       filter: blur(0);
     }
 
     50% {
       font-weight: 300;
-      color: #1bc7fb;
+      color: #E53988;
       filter: blur(2px);
     }
 
     60% {
       font-weight: 700;
-      color: #fff;
+      color: #E53988;
       filter: blur(0);
     }
 
     90% {
       font-weight: 500;
-      color: #e0287d;
+      color: #E53988;
       filter: blur(6px);
     }
   }

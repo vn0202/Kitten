@@ -49,6 +49,24 @@ let index = 0;
 
          brand.innerHTML = `<span>${text[index]}</span>`;
          brand.dataset.text=text[index];
+         if(window.innerWidth > 1024)
+         {
+             if(index==1)
+             {
+                 suspended.style.width = "100%";
+                 suspended.style.bottom ="150px"
+
+             }else if (index==2) {
+                 suspended.style.width = "70%";
+                 suspended.style.bottom ="150px"
+             }
+             else {
+                 suspended.style.width = "80%";
+                 suspended.style.bottom ="100px"
+             }
+         }
+
+
          suspended.src=images[index];
      },2000)
 
