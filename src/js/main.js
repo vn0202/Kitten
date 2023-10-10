@@ -123,6 +123,31 @@ window.addEventListener('scroll', function (e){
     }
 
 },false)
+console.log(window.innerWidth);
+
+const vn = document.getElementById('vn');
+const chinese = document.getElementById('china');
+const sp = document.getElementById('sp');
+
+if( window.innerWidth >= 1741 && window.innerWidth < 1950 )
+     {
+          vn.style.transform = "translateX(12%)"
+     }
+     if( this.window.innerWidth >= 1950)
+     {
+          vn.style.transform = "translateX(-4%)";
+          sp.style.transform = "translateX(-7rem)";
+          chinese.style.transform = "translateX(45%)"
+     }
+     if(window.innerWidth >=2610){
+        vn.style.transform = "translateX(-54%)";
+        sp.style.transform = "translateX(-19rem)";
+        chinese.style.transform = "translateX(17%)"
+     }
+window.addEventListener('resize', function(){
+    console.log(this.window.innerWidth);
+   
+})
 
         
 
