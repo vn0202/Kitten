@@ -1397,6 +1397,22 @@ video {
     width: 90px;
   }
 
+  .md\:w-\[381px\] {
+    width: 381px;
+  }
+
+  .md\:w-\[387px\] {
+    width: 387px;
+  }
+
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
   .md\:min-w-\[280px\] {
     min-width: 280px;
   }
@@ -1566,6 +1582,10 @@ video {
 
   .lg\:h-\[500px\] {
     height: 500px;
+  }
+
+  .lg\:h-\[519px\] {
+    height: 519px;
   }
 
   .lg\:w-1\/2 {
