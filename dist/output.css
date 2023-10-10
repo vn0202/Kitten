@@ -1042,11 +1042,6 @@ video {
   background-color: rgb(59 26 83 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#A8E6DB\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 230 219 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1474,6 +1469,10 @@ video {
 
   .md\:w-\[90px\] {
     width: 90px;
+  }
+
+  .md\:w-\[387px\] {
+    width: 387px;
   }
 
   .md\:min-w-\[280px\] {
