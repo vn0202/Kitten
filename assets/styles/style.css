@@ -1,4 +1,6 @@
-
+body{
+  overflow-x: hidden;
+}
 /*  */
 /*  .glitch {*/
 /*    font-weight: bold;*/
@@ -229,12 +231,12 @@
   /*move diagonal */
   .diagonal {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     gap:20px;
     transform: translate(0px,0px);
     position: absolute;
-    animation: diagonal 5s linear infinite;
+    animation: diagonal 10s linear infinite;
 
   }
   .diagonal svg{
@@ -247,7 +249,7 @@
       transform: translateX(0);
     }
     100%{
-      transform: translateX(calc(-50px * 9));
+      transform: translateX(calc(-50px * 30));
     }
   }
   /*fade in*/

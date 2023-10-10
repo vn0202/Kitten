@@ -672,6 +672,10 @@ video {
   z-index: 50;
 }
 
+.z-\[100\] {
+  z-index: 100;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1554,6 +1558,14 @@ video {
 
   .lg\:h-\[75px\] {
     height: 75px;
+  }
+
+  .lg\:h-\[450px\] {
+    height: 450px;
+  }
+
+  .lg\:h-\[500px\] {
+    height: 500px;
   }
 
   .lg\:w-1\/2 {

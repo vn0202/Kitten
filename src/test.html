@@ -4,65 +4,660 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
 <style>
     body{
-        background: black;
-
-        padding-top: 200px;
-    }
-    div{
-        min-height: 100vh;
-        width: 100%;
-        background: white;
+        background-color: black;
     }
 </style>
-</head>
 <body>
-<div></div>
-    <svg id="demo" width="67" height="231" viewBox="0 0 67 231" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <clipPath id="theClipPath">
-              <rect id="theSquare" x="0" y="-200" width="500" height="200" fill="#fff" />
-            </clipPath>
-            </defs>
-            <g id="clipPathReveal" clip-path="url(#theClipPath)">
-                <path d="M30.7799 36.4247C-8.92673 75.8097 -8.92673 -8.84625 30.7799 30.5387C-8.92673 -8.84625 76.4206 -8.84624 36.7139 30.5387C76.4206 -8.84624 76.4205 75.8097 36.7139 36.4247C76.4205 75.8097 -8.92673 75.8097 30.7799 36.4247Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
-                <path d="M30.7799 118.388C-8.92673 157.773 -8.92673 73.1171 30.7799 112.502C-8.92673 73.1171 76.4206 73.1171 36.7139 112.502C76.4206 73.1171 76.4205 157.773 36.7139 118.388C76.4205 157.773 -8.92673 157.773 30.7799 118.388Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
-                <path d="M30.7799 200.351C-8.92673 239.736 -8.92673 155.081 30.7799 194.465C-8.92673 155.081 76.4206 155.081 36.7139 194.465C76.4206 155.081 76.4205 239.736 36.7139 200.351C76.4205 239.736 -8.92673 239.736 30.7799 200.351Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10" fill="white"/>
-              </g>
-        <path d="M30.7799 36.4247C-8.92673 75.8097 -8.92673 -8.84625 30.7799 30.5387C-8.92673 -8.84625 76.4206 -8.84624 36.7139 30.5387C76.4206 -8.84624 76.4205 75.8097 36.7139 36.4247C76.4205 75.8097 -8.92673 75.8097 30.7799 36.4247Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
-        <path d="M30.7799 118.388C-8.92673 157.773 -8.92673 73.1171 30.7799 112.502C-8.92673 73.1171 76.4206 73.1171 36.7139 112.502C76.4206 73.1171 76.4205 157.773 36.7139 118.388C76.4205 157.773 -8.92673 157.773 30.7799 118.388Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
-        <path d="M30.7799 200.351C-8.92673 239.736 -8.92673 155.081 30.7799 194.465C-8.92673 155.081 76.4206 155.081 36.7139 194.465C76.4206 155.081 76.4205 239.736 36.7139 200.351C76.4205 239.736 -8.92673 239.736 30.7799 200.351Z" stroke="white" stroke-width="1.02" stroke-miterlimit="10"/>
-        </svg>
+    
+    <div>
+        <div class="relative  flex ">
+            <div style="rotate: 10deg; transform: translateY(-64px)" class=" diagonal   z-10 ">
+                <div class="flex ">      
+                    
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>  <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>  <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>  <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>  <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    <svg  viewBox="0 0 114 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M63.7925 0.284619L113.025 9.57825L49.7118 49.0214L94.2901 108.825L45.0576 99.5318L0.479278 39.7278L63.7925 0.284619Z" fill="#0C5666"/>
+                    </svg>
+                    
+                </div>
+            </div>
+           
+            <div class="overflow-hidden relative z-20 ">
+                <div class="slider-track bg-[#3B1A53] ">
+                    <div class="absolute top-0 right-0 h-full left-0 -z-10 flex flex-col justify-between">
+                        <div class="flex gap-6">
+                            <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                            </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg>
+                            <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                            </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg>  <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg>  <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg>  <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg> <svg width="32" height="9" viewBox="0 0 32 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H25L32 9H7L0 0Z" fill="#E53988"/>
+                        </svg>
+
+                        </div>
+                        <div class="flex gap-6">
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
+                            <svg width="30" height="9" viewBox="0 0 30 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.5 0H29.5L25.5 9H0.5L4.5 0Z" fill="#E53988"/>
+                            </svg>
 
 
 
 
+                        </div>
+                    </div>
+                    <div class="flex gap-8">
+
+                        <div class="slide">
+                            <img src="assets/images/logos/playbux.png" alt="playbu">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/azuki.png" alt="azuki">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/bande.png" alt="pudgi">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/kolex.png" alt="rtfkt">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/mart.png" alt="playbu">
+                        </div>
+
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/nerf.png" alt="azuki">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/panda.png" alt="pudgi">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/rtfkt.png" alt="rtfkt">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
 
 
-    <script>
-        gsap.registerPlugin(DrawSVGPlugin);
+                        <div class="slide">
+                            <img src="assets/images/logos/pudgi.png" alt="playbu">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/playbux.png" alt="playbu">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/azuki.png" alt="azuki">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/bande.png" alt="pudgi">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/kolex.png" alt="rtfkt">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/mart.png" alt="playbu">
+                        </div>
 
-        // Create a GSAP timeline
-        const timeline = gsap.timeline({
-            // Trigger the timeline when the user scrolls past the top of the SVG
-            scrollTrigger: {
-                trigger: "svg",
-                start: "top top",
-            },
-        });
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/nerf.png" alt="azuki">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/panda.png" alt="pudgi">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/logos/rtfkt.png" alt="rtfkt">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
 
-        // Create a GSAP DrawSVGPlugin tween
-        const drawSVGTween = gsap.to("svg path", {
-            drawSVG: "0% 100%",
-            duration: 1,
-            // Use the `scrub` option to make the animation scrubbable, so that the user can control the progress of the animation by scrolling
-            scrub: true,
-        });
 
-        // Add the DrawSVGPlugin tween to the timeline
-        timeline.add(drawSVGTween);
-    </script>
+                        <div class="slide">
+                            <img src="assets/images/logos/pudgi.png" alt="playbu">
+                        </div>
+                        <div class="self-center">
+                            <div class="cricle"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
