@@ -77,8 +77,19 @@ const test2 = document.getElementById('test-2');
 const test3 = document.getElementById('test-3');
 let previousScrollY =0;
 let scrollUp = false;
+let tra  = 0;
 
 window.addEventListener('scroll', function (e){
+    const product_case = this.document.getElementById('product_case');
+    const productShowcase = this.document.getElementById('product-showcase');
+    const rectProduct = productShowcase.getBoundingClientRect();
+    // if(rectProduct.y < 600)
+    // { 
+    //     window.onscroll = () => {
+    //         window.scrollTo(scrollLeft, scrollTop);
+    //     };
+    // }
+    // console.log(rectProduct.x,rectProduct.y);
     const test = document.getElementById('test');
     let rect = test.getBoundingClientRect();
     const currentScrollY = window.scrollY;
@@ -156,15 +167,21 @@ const container_g  = document.getElementsByClassName('container');
 
 
 window.addEventListener('resize', function(){
-    console.log(window.innerWidth);
+const policy = this.document.getElementById('POLICY');
+
 
     for (let i =0; i < container_g.length; i++ )
     {
         if(window.innerWidth < 1350) {
             container_g[i].style.width = "1200px";
+            policy.style.fontSize = '14px';
+            policy.style.gap = "0";
         }
         else{
             container_g[i].style.width = "auto";
+            policy.style.fontSize = '18px';
+            policy.style.gap = "8";
+
         }
     }
     if( window.innerWidth >= 1741 && window.innerWidth < 1950 )
