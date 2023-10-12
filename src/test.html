@@ -7,57 +7,156 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        body{
-            background: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html,body,main{
+            width: 100%;
+            height: 100%;
+
+        }
+
+        h1{
+            font-size: 4rem;}
+        p{
+            width: 50%;
+            margin: 2rem 0;
+
+        }
+        section{
+            height: 100vh;
         }
         .container{
-            width: 100%;
-            height: 80vh;
-            background: white;
-            position: relative;
-            /*transform: translateX(100px);*/
+            padding:5rem;
         }
-        .item1{
+        .sticky_parent{
+            height: 500vh;
+            /*overflow: hidden;*/
+
+        }
+        .sticky{
+            overflow: hidden;
+            position: sticky;
+            top:100px;
+            height: 100vh;
+            border: 1px solid red;
+        }
+        .scroll_sction{
             position: absolute;
-            z-index: 10;
-            background: red;
-            width: 100%;
-            height: 80vh;
-        }
-        .item2{
-             position: relative;
-            z-index: 2;
-            width: 500px;
-            height: 500px;
-        }
-        .test{
-            position: fixed;
             top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            z-index: 100;
-            width: 100%;
-            height: 800px;
-            background: gold;
+            height: 100%;
+            width: 500vw;
+            will-change: transform;
+            display: flex;
+justify-content: space-between;
+            padding:0 5vw;
         }
+        img{
+            width: 400px;
+            height:80% ;
+            object-fit: cover;
+        }
+
+
     </style>
 </head>
 <body>
-  <div class="container">
-      <div class="item1">
+<main>
+    <section>
+        <div class="container">
+            <h1>Hybird scroll</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut autem beatae blanditiis consequuntur
+                delectus doloremque, eius eos eum fuga, laboriosam magnam magni modi molestiae nostrum odio omnis
+                perferendis perspiciatis quae quas qui quidem quisquam quos sed sequi sit tempore ut veniam veritatis
+                voluptatibus! Architecto autem corporis ducimus earum illo laudantium magnam nemo placeat. Accusantium
+                aliquid animi consectetur consequatur, dolore dolores dolorum ducimus eius eligendi excepturi iure
+                libero mollitia necessitatibus obcaecati optio pariatur placeat possimus quae quis soluta tenetur ullam
+                vel voluptates. Aliquid autem consequatur dolor, eaque esse est exercitationem illum incidunt ipsum
+                laudantium rem repellat repudiandae sapiente sunt tenetur?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut autem beatae blanditiis consequuntur
+                delectus doloremque, eius eos eum fuga, laboriosam magnam magni modi molestiae nostrum odio omnis
+                perferendis perspiciatis quae quas qui quidem quisquam quos sed sequi sit tempore ut veniam veritatis
+                voluptatibus! Architecto autem corporis ducimus earum illo laudantium magnam nemo placeat. Accusantium
+                aliquid animi consectetur consequatur, dolore dolores dolorum ducimus eius eligendi excepturi iure
+                libero mollitia necessitatibus obcaecati optio pariatur placeat possimus quae quis soluta tenetur ullam
+                vel voluptates. Aliquid autem consequatur dolor, eaque esse est exercitationem illum incidunt ipsum
+                laudantium rem repellat repudiandae sapiente sunt tenetur?
+            </p>
 
-      </div>
-      <div class="item2">
-         <div class="test">
+        </div>
+    </section>
+    <div class="sticky_parent">
+        <div class="sticky">
+            <div class="scroll_sction">
 
-         </div>
-      </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <h1>About</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut autem beatae blanditiis consequuntur
+                delectus doloremque, eius eos eum fuga, laboriosam magnam magni modi molestiae nostrum odio omnis
+                perferendis perspiciatis quae quas qui quidem quisquam quos sed sequi sit tempore ut veniam veritatis
+                voluptatibus! Architecto autem corporis ducimus earum illo laudantium magnam nemo placeat. Accusantium
+                aliquid animi consectetur consequatur, dolore dolores dolorum ducimus eius eligendi excepturi iure
+                libero mollitia necessitatibus obcaecati optio pariatur placeat possimus quae quis soluta tenetur ullam
+                vel voluptates. Aliquid autem consequatur dolor, eaque esse est exercitationem illum incidunt ipsum
+                laudantium rem repellat repudiandae sapiente sunt tenetur?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut autem beatae blanditiis consequuntur
+                delectus doloremque, eius eos eum fuga, laboriosam magnam magni modi molestiae nostrum odio omnis
+                perferendis perspiciatis quae quas qui quidem quisquam quos sed sequi sit tempore ut veniam veritatis
+                voluptatibus! Architecto autem corporis ducimus earum illo laudantium magnam nemo placeat. Accusantium
+                aliquid animi consectetur consequatur, dolore dolores dolorum ducimus eius eligendi excepturi iure
+                libero mollitia necessitatibus obcaecati optio pariatur placeat possimus quae quis soluta tenetur ullam
+                vel voluptates. Aliquid autem consequatur dolor, eaque esse est exercitationem illum incidunt ipsum
+                laudantium rem repellat repudiandae sapiente sunt tenetur?
+            </p>
 
+        </div>
+    </section>
+    <div class="sticky_parent">
+        <div class="sticky">
+            <div class="scroll_sction">
 
-  </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <h1>end</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut autem beatae blanditiis consequuntur
+                delectus doloremque, eius eos eum fuga, laboriosam magnam magni modi molestiae nostrum odio omnis
+                perferendis perspiciatis quae quas qui quidem quisquam quos sed sequi sit tempore ut veniam veritatis
+                voluptatibus! Architecto autem corporis ducimus earum illo laudantium magnam nemo placeat. Accusantium
+                aliquid animi consectetur consequatur, dolore dolores dolorum ducimus eius eligendi excepturi iure
+                libero mollitia necessitatibus obcaecati optio pariatur placeat possimus quae quis soluta tenetur ullam
+                vel voluptates. Aliquid autem consequatur dolor, eaque esse est exercitationem illum incidunt ipsum
+                laudantium rem repellat repudiandae sapiente sunt tenetur?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut autem beatae blanditiis consequuntur
+                delectus doloremque, eius eos eum fuga, laboriosam magnam magni modi molestiae nostrum odio omnis
+                perferendis perspiciatis quae quas qui quidem quisquam quos sed sequi sit tempore ut veniam veritatis
+                voluptatibus! Architecto autem corporis ducimus earum illo laudantium magnam nemo placeat. Accusantium
+                aliquid animi consectetur consequatur, dolore dolores dolorum ducimus eius eligendi excepturi iure
+                libero mollitia necessitatibus obcaecati optio pariatur placeat possimus quae quis soluta tenetur ullam
+                vel voluptates. Aliquid autem consequatur dolor, eaque esse est exercitationem illum incidunt ipsum
+                laudantium rem repellat repudiandae sapiente sunt tenetur?
+            </p>
+
+        </div>
+    </section>
+</main>
+<script src="js/test.js"></script>
 </body>
 </html>
