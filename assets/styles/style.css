@@ -392,19 +392,33 @@ body{
       }
     }
     #map{
-     background:  linear-gradient(to bottom, rgba(0,0, 0, 1) 5%, transparent 95%),
-          url("../images/map.png") no-repeat top left;
-      background-size: 50% 1000px;
+     background:  linear-gradient(to bottom, rgba(0,0, 0, 1) 25%, transparent 95%),
+          url("../images/map.png") no-repeat;
+          background-position: left bottom;
+      background-size:45% 900px;
+    }
+    #gradient-1{
+      background:linear-gradient(to bottom, rgba(0,0,0,0.8), transparent), linear-gradient(to top, rgba(0,0,0,0.8), transparent),url('assets/images/gradient.png') no-repeat 0px 300px;
     }
     @media (min-width: 769px) and (max-width: 1024px) {
       #map{
         background-size: 50% 800px;
       }
     }
+   
+   
+    
 
-    @media (max-width: 768px) and (max-width: 1024px) {
+    @media (max-width: 768px)  {
       #map{
-        background-size: 50% 400px;
+        background:  linear-gradient(to bottom, rgba(0,0, 0, 1) 25%, transparent 95%),
+        url("../images/Vector.png") no-repeat;
+        background-size: 64% 478px;
+      }
+      #gradient-1{
+       
+          background:linear-gradient(to bottom, rgba(0,0,0,0.8), transparent), linear-gradient(to top, rgba(0,0,0,0.8), transparent)
+        
       }
     }
 

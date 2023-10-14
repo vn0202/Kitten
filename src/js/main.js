@@ -58,16 +58,48 @@ setInterval(()=>{
              if(index==1)
              {
                  suspended.style.width = "100%";
-                 suspended.style.bottom ="170px"
+                 suspended.style.bottom ="200px"
 
              }else if (index==2) {
                  suspended.style.width = "50%";
-                 suspended.style.bottom ="200px"
+                 suspended.style.bottom ="230px"
              }
              else {
                  suspended.style.width = "80%";
-                 suspended.style.bottom ="70px"
+                 suspended.style.bottom ="100px"
              }
+         }
+         else if(window.innerWidth < 600)
+         {
+            if(index==1)
+            {
+                suspended.style.width = "100%";
+                suspended.style.bottom ="150px"
+
+            }else if (index==2) {
+                suspended.style.width = "50%";
+                suspended.style.bottom ="150px"
+            }
+            else {
+                suspended.style.width = "80%";
+                suspended.style.bottom ="100px"
+            }
+         }
+         else if(window.innerWidth > 600)
+         {
+            if(index==1)
+            {
+                suspended.style.width = "110%";
+                suspended.style.bottom ="200px"
+
+            }else if (index==2) {
+                suspended.style.width = "90%";
+                suspended.style.bottom ="200px"
+            }
+            else {
+                suspended.style.width = "100%";
+                suspended.style.bottom ="140px"
+            }
          }
 
 
@@ -104,7 +136,7 @@ window.addEventListener('scroll', function (e){
     if (currentScrollY > previousScrollY) {
         scrollUp = false;
        
-            TweenMax.set ("#demo", {xPercent:-50, yPercent:-50});
+            // TweenMax.set ("#demo", {xPercent:-50, yPercent:-50});
             TweenMax.from("#theSquare", 5, {attr:{y:-100}, yoyo:true, repeat:0, ease:Linear.easeNone});
             TweenMax.to('#theSquare',5, {attr:{y:300}, yoyo:true, repeat:0, ease:Linear.easeNone})
 
@@ -123,10 +155,32 @@ window.addEventListener('scroll', function (e){
         test3.style.transitionDelay = "1s";
     }
     else{
-        test.style.transform = "translateX(-59px)";
-        test2.style.transform = "translateX(0)";
-        test2.style.transitionDelay = "500ms";
-        test3.style.left = "0";
+        if(this.window.innerWidth < 768)
+        {
+            test.style.transform = "translateX(-28px)";
+            test2.style.transitionDelay = "500ms";
+            test3.style.left = "0";
+            test2.style.transform = "translateX(4px)";
+            // document.querySelector('#test  svg').style.transform = "translateX(30px)";
+        
+
+
+        }
+        else if(this.window.innerWidth > 1000){
+            test.style.transform = "translateX(-59px)";
+            test2.style.transitionDelay = "500ms";
+            test2.style.transform = "translateX(0px)";
+
+            test3.style.left = "4px";
+        }
+        else {
+            test.style.transform = "translateX(-47px)";
+            test2.style.transitionDelay = "500ms";
+            test2.style.transform = "translateX(0px)";
+
+            test3.style.left = "4px";
+        }
+      
     }
 
 },false)
@@ -135,27 +189,129 @@ console.log(window.innerWidth);
 const vn = document.getElementById('vn');
 const chinese = document.getElementById('china');
 const sp = document.getElementById('sp');
+if(window.innerWidth < 500)
+{
+    document.getElementById('container_map').style.transform = "translate(31%,0)"
+chinese.style.transform = "translate(-95%,153%)"
+    vn.style.transform = "translate(-170%,106%)";
+    sp.style.transform = "translate(-185%,16px)";
 
-if( window.innerWidth >= 1741 && window.innerWidth < 1950 )
-     {
-          vn.style.transform = "translateX(12%)"
-     }
-     if( this.window.innerWidth >= 1950)
-     {
-          vn.style.transform = "translateX(-4%)";
-          sp.style.transform = "translateX(-7rem)";
-          chinese.style.transform = "translateX(45%)"
-     }
-     if(window.innerWidth >=2610){
-        vn.style.transform = "translateX(-54%)";
-        sp.style.transform = "translateX(-19rem)";
-        chinese.style.transform = "translateX(17%)"
-     }
+
+}
+else if(window.innerWidth >500 && window.innerWidth < 912){
+    document.getElementById('container_map').style.transform = "translate(29%,0)"
+
+    vn.style.transform = "translate(3%,63%)"
+    sp.style.transform = "translate(-22%,67%)";
+
+
+}
+else if(window.innerWidth >=912 && window.innerWidth < 978){
+   document.getElementById('container_map').style.transform = "translateX(26%)"
+}
+else if(window.innerWidth >=979 && window.innerWidth < 1067){
+    vn.style.transform = "translate(-5%,41%)";
+    chinese.style.transform = "translate(0%,155%)"
+
+
+    document.getElementById('container_map').style.transform = "translateX(26%)"
+ }
+else if(window.innerWidth >=1067 && window.innerWidth < 1236){
+    vn.style.transform = "translate(-2%,44%)";
+
+    document.getElementById('container_map').style.transform = "translateX(17%)"
+ }
+
+ else if(window.innerWidth >=1236 && window.innerWidth < 1450){
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    document.getElementById('container_map').style.transform = "translateX(17%)";
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=1450 && window.innerWidth < 1550){
+    document.getElementById('container_map').style.transform = "translateX(11%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=1699 && window.innerWidth < 1900){
+    document.getElementById('container_map').style.transform = "translate(6%,-5%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=1800 && window.innerWidth < 2400){
+    document.getElementById('container_map').style.transform = "translate(-1%,-2%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=2410 && window.innerWidth < 2510){
+    document.getElementById('container_map').style.transform = "translate(-21%,-2%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=2511 && window.innerWidth <= 2650){
+    document.getElementById('container_map').style.transform = "translate(-21%,-2%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-59%,67%)";
+
+ }
+ else if(window.innerWidth >2650 && window.innerWidth <= 3500){
+    document.getElementById('container_map').style.transform = "translate(-37%,-2%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-59%,67%)";
+
+ }
+
+// if( window.innerWidth >= 1741 && window.innerWidth < 1950 )
+//      {
+//           vn.style.transform = "translateX(12%)"
+// }
+//      if( this.window.innerWidth >= 1950)
+// {
+//           vn.style.transform = "translateX(-4%)";
+// sp.style.transform = "translateX(-7rem)";
+// chinese.style.transform = "translateX(45%)"
+//      }
+//      if(window.innerWidth >=2610){
+//         vn.style.transform = "translateX(-54%)";
+// sp.style.transform = "translateX(-19rem)";
+//         chinese.style.transform = "translateX(17%)"
+//      }
 const container_g  = document.getElementsByClassName('container');
 
     for (let i =0; i < container_g.length; i++ )
     {
-        if(window.innerWidth < 1350) {
+        if(window.innerWidth > 1300 && window.innerWidth < 1350) {
             console.log(container_g[i])
 ;            container_g[i].style.width = "1200px";
         }
@@ -167,49 +323,123 @@ const container_g  = document.getElementsByClassName('container');
 
 
 window.addEventListener('resize', function(){
-const policy = this.document.getElementById('POLICY');
 
 
     for (let i =0; i < container_g.length; i++ )
     {
-        if(window.innerWidth < 1350) {
+        if(window.innerWidth < 1350 && this.window.innerWidth > 1300) {
             container_g[i].style.width = "1200px";
-            policy.style.fontSize = '14px';
-            policy.style.gap = "0";
+          
         }
         else{
             container_g[i].style.width = "auto";
-            policy.style.fontSize = '18px';
-            policy.style.gap = "8";
+          
 
         }
     }
-    if( window.innerWidth >= 1741 && window.innerWidth < 1950 )
+    if(window.innerWidth < 500)
     {
-        vn.style.transform = "translateX(16%)";
-        sp.style.transform = "translateX(-30%)";
+        document.getElementById('container_map').style.transform = "translate(31%,0)"
+chinese.style.transform = "translate(-95%,153%)"
+    vn.style.transform = "translate(-170%,106%)";
+    sp.style.transform = "translate(-185%,16px)";
 
+    
+    }
+    else if(window.innerWidth >500 && window.innerWidth < 912){
+        document.getElementById('container_map').style.transform = "translate(29%,0)"
+    
+        vn.style.transform = "translate(3%,63%)"
+        sp.style.transform = "translate(-22%,67%)";
+    
+    
+    }
+    else if(window.innerWidth >=912 && window.innerWidth < 978){
+       document.getElementById('container_map').style.transform = "translateX(26%)"
+    }
+    else if(window.innerWidth >=979 && window.innerWidth < 1067){
+        vn.style.transform = "translate(-5%,41%)";
+        chinese.style.transform = "translate(0%,155%)"
+    
+    
+        document.getElementById('container_map').style.transform = "translateX(26%)"
+     }
+    else if(window.innerWidth >=1067 && window.innerWidth < 1236){
+        vn.style.transform = "translate(-2%,44%)";
+    
+        document.getElementById('container_map').style.transform = "translateX(17%)"
+     }
+    
+     else if(window.innerWidth >=1236 && window.innerWidth < 1450){
+        vn.style.transform = "translate(-7%,54%)";
+        chinese.style.transform = "translate(0%,160%)"
+    
+    
+        document.getElementById('container_map').style.transform = "translateX(17%)";
+        sp.style.transform = "translate(-46%,67%)";
+    
+     }
+     else if(window.innerWidth >=1450 && window.innerWidth < 1550){
+        document.getElementById('container_map').style.transform = "translateX(11%)";
+    
+        vn.style.transform = "translate(-7%,54%)";
+        chinese.style.transform = "translate(0%,160%)"
+    
+    
+        sp.style.transform = "translate(-46%,67%)";
+    
+     }
+     else if(window.innerWidth >=1699 && window.innerWidth < 1900){
+        document.getElementById('container_map').style.transform = "translate(6%,-5%)";
+    
+        vn.style.transform = "translate(-7%,54%)";
+        chinese.style.transform = "translate(0%,160%)"
+    
+    
+        sp.style.transform = "translate(-46%,67%)";
+    
+     }
+     else if(window.innerWidth >=1800 && window.innerWidth < 2400){
+        document.getElementById('container_map').style.transform = "translate(-1%,-2%)";
+    
+        vn.style.transform = "translate(-7%,54%)";
+        chinese.style.transform = "translate(0%,160%)"
+    
+    
+        sp.style.transform = "translate(-46%,67%)";
+    
+     }
+     else if(window.innerWidth >=2410 && window.innerWidth < 2510){
+        document.getElementById('container_map').style.transform = "translate(-21%,-2%)";
+    
+        vn.style.transform = "translate(-7%,54%)";
+        chinese.style.transform = "translate(0%,160%)"
+    
+    
+        sp.style.transform = "translate(-46%,67%)";
+    
+     }
+     else if(window.innerWidth >=2511 && window.innerWidth <= 2650){
+        document.getElementById('container_map').style.transform = "translate(-21%,-2%)";
+    
+        vn.style.transform = "translate(-7%,54%)";
+        chinese.style.transform = "translate(0%,160%)"
+    
+    
+        sp.style.transform = "translate(-59%,67%)";
+    
+     }
+     else if(window.innerWidth >2650 && window.innerWidth <= 3500){
+        document.getElementById('container_map').style.transform = "translate(-37%,-2%)";
+    
+        vn.style.transform = "translate(-7%,54%)";
+        chinese.style.transform = "translate(0%,160%)"
+    
+    
+        sp.style.transform = "translate(-59%,67%)";
+    
+     }
 
-    }
-    else if( window.innerWidth >= 1950)
-    {
-        vn.style.transform = "translateX(-4%)";
-        sp.style.transform = "translateX(-7rem)";
-        chinese.style.transform = "translateX(45%)"
-    }
-    else  if(window.innerWidth >=2610){
-        vn.style.transform = "translateX(-54%)";
-        sp.style.transform = "translateX(-19rem)";
-        chinese.style.transform = "translateX(17%)"
-    }
-    else if(window.innerWidth < 1740){
-        console.log('oki');
-        vn.style.transform = "translateX(23%)"
-
-        chinese.style.transform = "translateX(54%)";
-        sp.style.transform = "translateX(-16px)";
-
-    }
    
 })
 
