@@ -903,7 +903,7 @@ body{
     position: relative;
   }
 #product_case{
-  transition: all 600ms ease-in;
+  /* transition: all 50ms ease-in-out; */
 }
 #product_case::-webkit-scrollbar {
   display: none;

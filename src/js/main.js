@@ -1,4 +1,4 @@
-
+console.log(window.innerWidth)
 function move_scroll(){
     const followers = document.getElementsByClassName('folower');
     const element = followers[0];
@@ -113,6 +113,8 @@ let tra  = 0;
 window.addEventListener('scroll', function (e){
     const product_case = this.document.getElementById('product_case');
     const productShowcase = this.document.getElementById('product-showcase');
+    let te = productShowcase.getBoundingClientRect();
+
     const rectProduct = productShowcase.getBoundingClientRect();
     const test = document.getElementById('test');
     let rect = test.getBoundingClientRect();
@@ -138,7 +140,7 @@ window.addEventListener('scroll', function (e){
     }
 
     previousScrollY = currentScrollY;
-    if(rectProduct.y < 800 && !scrollUp)
+    if(te.bottom + te.height > this.window.innerHeight && !scrollUp)
     {
         e.preventDefault();
         let trans = 0;
@@ -148,17 +150,19 @@ window.addEventListener('scroll', function (e){
         product_case.addEventListener('wheel', function(e){
             const last = document.getElementById('last-child');
 
-            let pos =(window.innerWidth - last.getBoundingClientRect().x) < 100;
+            let pos =(window.innerWidth - last.getBoundingClientRect().x) < 0;
             if(e.deltaY > 0 )
             {
+                document.getElementById('page-first').style.fill ="none";
+                document.getElementById('page-two').style.fill = 'white'
                 if(pos ){
                     e.preventDefault();
                     if(e.deltaY > 0){
-                        trans+= 100;
+                        trans+= 150;
                     
                     }
                     else if(trans > 100){
-                        trans -=100;
+                        trans -=150;
                         
                     }
                     product_case.scrollTo({
@@ -184,13 +188,15 @@ window.addEventListener('scroll', function (e){
         product_case.style.overflowX = 'scroll';
         product_case.addEventListener('wheel', function(e){
             const first_child = document.getElementById('first-child').getBoundingClientRect();
-            console.log(first_child.x,first_child.y);
+            // console.log(first_child.x,first_child.y);
             if(first_child.x <78)
             {
                 if(e.deltaY < 0)
                 {
-                    trans -=100;
+                    trans -=150;
                     e.preventDefault();
+                    document.getElementById('page-first').style.fill ="white";
+                document.getElementById('page-two').style.fill = 'none'
                     product_case.scrollTo({
                         left:trans,
                         behavior:'smooth'
@@ -321,6 +327,16 @@ else if(window.innerWidth >=1067 && window.innerWidth < 1236){
  }
  else if(window.innerWidth >=1450 && window.innerWidth < 1550){
     document.getElementById('container_map').style.transform = "translateX(11%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=1551 && window.innerWidth < 1699){
+    document.getElementById('container_map').style.transform = "translate(11%,-4%)";
 
     vn.style.transform = "translate(-7%,54%)";
     chinese.style.transform = "translate(0%,160%)"
