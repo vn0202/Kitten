@@ -1703,6 +1703,11 @@ video {
     border-radius: 0px;
   }
 
+  .md\:rounded-b-none {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
   .md\:p-9 {
     padding: 2.25rem;
   }
