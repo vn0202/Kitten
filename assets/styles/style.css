@@ -903,3 +903,6 @@ body{
     position: relative;
   }
 
+#product_case::-webkit-scrollbar {
+  display: none;
+}
