@@ -1114,7 +1114,7 @@
             </svg>
       </div>
            <div class="md:w-5/12  relative" >
-               <div class=" hidden md:flex absolute right-0 -top-6  lg:w-1/2 gap-8 items-end justify-end pr-[40px]">
+               <div class=" hidden md:flex lg:absolute right-0 -top-6  lg:w-1/2 gap-8 items-end justify-end pr-[40px]">
                    <svg  width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                        <path d="M73.2371 102H30.7629C30.7629 86.1125 17.8875 73.2371 2 73.2371V30.7629C17.8875 30.7629 30.7629 17.8875 30.7629 2H73.2371C73.2371 17.8875 86.1125 30.7629 102 30.7629V73.2371C86.1125 73.2371 73.2371 86.1125 73.2371 102Z"
                              stroke="white" stroke-width="2.45" stroke-miterlimit="10"/>
@@ -1405,7 +1405,7 @@
                     </div>
                 </div>
                
-                <div class="h-[2px] bg-white w-[150px] self-center"></div>
+                <div class=" md:hidden h-[2px] bg-white w-[150px] self-center"></div>
             </div>
 
            <div  class="flex flex-col gap-4 md:gap-0 md:flex-row my-12 w-full overflow-y-auto font-sub">
@@ -1463,8 +1463,8 @@
         <div class="container mx-auto px-4 lg:px-10 py-4">
             <div>
                 <div class="flex flex-col gap-7 md:flex-row">
-                    <div  class=" font-heading font-bold text-[24px] md:text-4xl lg:text-[50px] text-white md:w-4/12">ABOUT US</div>
-                    <div   class="font-sub font-bold text-lg md:text-2xl lg:text-4xl  text-white md:w-8/12 -translate-y-4 md:leading-[40px] lg:leading-[60px]">
+                    <div  class=" font-heading font-bold text-[24px] md:text-[34px] lg:text-[50px] text-white md:w-4/12">ABOUT US</div>
+                    <div   class="font-sub font-bold text-lg md:text-xl lg:text-4xl  text-white md:w-8/12 -translate-y-4 md:translate-y-0 md:leading-[40px] lg:leading-[60px]">
                        <div >
                            WE ARE A <span class="text-primary">VISIONARY CREATIVE STUDIO</span>
                        </div>
@@ -1585,7 +1585,7 @@
                         </div>
                     </div>
 
-                    <div class="hidden md:flex flex justify-between lg:justify-end items-center mt-[100px] md:mt-24">
+                    <div class="hidden md:flex md:invisible lg:visible   justify-between lg:justify-end items-center mt-[100px] md:mt-24">
                         <div class="text-white font-bold  text-sm lg:text-lg flex-1">
                             Ready to embark on your journey?
                         </div>
@@ -1636,9 +1636,29 @@
        
     </div>
     
-
+    <div class=" w-full hidden md:flex lg:hidden   gap-8 justify-center items-center mt-24">
+        <div class="text-white font-bold  text-sm lg:text-lg">
+            Ready to embark on your journey?
+        </div>
+        <div class="w-1/2">
+            <button class="py-2 px-2  border border-white md:px-4  hover:bg-white hover:text-black text-white flex items-center gap-4 mb-2  w-max group rounded-full">
+                <a href="./contact.html" class="font-bold text-sm lg:text-lg z-[100] ">EXPLORE NOW</a>
+                <svg class="relative z-10 hidden group-hover:block" width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_292_169)">
+                        <path d="M21.0599 12.505L0.939941 0.88501C6.70994 7.55501 6.70994 17.445 0.939941 24.115L21.0599 12.495V12.505Z" fill="#E53988"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_292_169">
+                            <rect width="20.12" height="23.23" fill="white" transform="translate(0.939941 0.88501)"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+         
+        </div>
+    </div>
     <div class="flex flex-col md:flex-row gap-8 md:gap-4 lg:gap-0 container mx-auto px-4 lg:px-10 items-start mt-6 md:mt-32">
-      
+       
         <div class="font-heading font-bold text-xl md:text-3xl lg:text-[50px] md:w-5/12 ">
             <span class="text-white">OUR </span>
             <span class="text-white">MISSION</span>

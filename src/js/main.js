@@ -413,35 +413,31 @@ responsive();
 // sp.style.transform = "translateX(-19rem)";
 //         chinese.style.transform = "translateX(17%)"
 //      }
-const container_g  = document.getElementsByClassName('container');
+// const container_g  = document.getElementsByClassName('container');
 
-    for (let i =0; i < container_g.length; i++ )
-    {
-        if(window.innerWidth > 1300 && window.innerWidth < 1350) {
-;            container_g[i].style.width = "1200px";
-        }
-        else{
-            container_g[i].style.width = "auto";
-
-        }
-    }
+//     for (let i =0; i < container_g.length; i++ )
+//     {
+//         if(window.innerWidth > 1300 && window.innerWidth < 1350) {
+// ;            container_g[i].style.width = "1200px";
+//         }
+//         else
+//         container_g[i].style.width= "auto";
+      
+//     }
 
 
 window.addEventListener('resize', function(){
 
 
-    for (let i =0; i < container_g.length; i++ )
-    {
-        if(window.innerWidth < 1350 && this.window.innerWidth > 1300) {
-            container_g[i].style.width = "1200px";
+    // for (let i =0; i < container_g.length; i++ )
+    // {
+    //     if(window.innerWidth < 1350 && this.window.innerWidth > 1300) {
+    //         container_g[i].style.width = "1200px";
           
-        }
-        else{
-            container_g[i].style.width = "auto";
-          
-
-        }
-    }
+    //     }
+    //     container_g[i].style.width= "auto";
+     
+    // }
    responsive();
    
 })
