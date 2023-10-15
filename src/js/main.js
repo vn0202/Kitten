@@ -1,4 +1,126 @@
-console.log(window.innerWidth)
+
+function responsive(){
+    const vn = document.getElementById('vn');
+const chinese = document.getElementById('china');
+const sp = document.getElementById('sp');
+if(window.innerWidth < 500)
+{
+   
+        document.getElementById('container_map').style.transform = "translate(31%,105px)"
+chinese.style.transform = "translate(-95%, -77%)"
+    vn.style.transform = "translate(-170%,106%)";
+    sp.style.transform = "translate(-185%,16px)";
+
+    
+    
+
+
+}
+else if(window.innerWidth >500 && window.innerWidth < 912){
+    document.getElementById('container_map').style.transform = "translate(29%,88px)"
+    chinese.style.transform = "translate(3%, -54%)"
+
+    vn.style.transform = "translate(3%,63%)"
+    sp.style.transform = "translate(-22%,67%)";
+
+
+}
+else if(window.innerWidth >=912 && window.innerWidth < 978){
+   document.getElementById('container_map').style.transform = "translateX(26%)"
+}
+else if(window.innerWidth >=979 && window.innerWidth < 1067){
+    vn.style.transform = "translate(-5%,41%)";
+    chinese.style.transform = "translate(0%,155%)"
+
+
+    document.getElementById('container_map').style.transform = "translateX(26%)"
+ }
+else if(window.innerWidth >=1067 && window.innerWidth < 1236){
+    vn.style.transform = "translate(-2%,44%)";
+
+    document.getElementById('container_map').style.transform = "translateX(17%)"
+ }
+
+ else if(window.innerWidth >=1236 && window.innerWidth < 1450){
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    document.getElementById('container_map').style.transform = "translateX(17%)";
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=1450 && window.innerWidth < 1550){
+    document.getElementById('container_map').style.transform = "translateX(11%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=1551 && window.innerWidth < 1699){
+    document.getElementById('container_map').style.transform = "translate(11%,-4%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=1699 && window.innerWidth < 1900){
+    document.getElementById('container_map').style.transform = "translate(6%,-5%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=1800 && window.innerWidth < 2400){
+    document.getElementById('container_map').style.transform = "translate(-1%,-2%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=2410 && window.innerWidth < 2510){
+    document.getElementById('container_map').style.transform = "translate(-21%,-2%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-46%,67%)";
+
+ }
+ else if(window.innerWidth >=2511 && window.innerWidth <= 2650){
+    document.getElementById('container_map').style.transform = "translate(-21%,-2%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-59%,67%)";
+
+ }
+ else if(window.innerWidth >2650 && window.innerWidth <= 3500){
+    document.getElementById('container_map').style.transform = "translate(-37%,-2%)";
+
+    vn.style.transform = "translate(-7%,54%)";
+    chinese.style.transform = "translate(0%,160%)"
+
+
+    sp.style.transform = "translate(-59%,67%)";
+
+ }
+}
 function move_scroll(){
     const followers = document.getElementsByClassName('folower');
     const element = followers[0];
@@ -207,195 +329,109 @@ window.addEventListener('scroll', function (e){
            
           
         },false)
-        // console.log(1);
     
-
-        // product_case.addEventListener('wheel', function(e){
-        //     const last = document.getElementById('last-child');
-
-        //     let pos =(window.innerWidth - last.getBoundingClientRect().x) < 100;
-            
-        //             e.preventDefault();
-        //             alert('hello');
-                    
-        //                 trans+= 100;
-        //             product_case.scrollTo({
-        //                 right:trans,
-        //                 behavior:'smooth'
-        //             })
-                  
-            
-                
-         
-        // })
-        
     }
     else
     return true;
    
 
    
-    if(rect.y < window.innerHeight -50  && !scrollUp)
-    {
-        test.style.transform = `translateX(${translateFirst}px)`;
-        test2.style.transform = `translateX(${translateTwo}px)`;
-        test2.style.transitionDelay = "500ms";
-        test3.style.left = `${translateTwo}px`;
-        test3.style.transitionDelay = "1s";
-    }
-    else{
-        if(this.window.innerWidth < 768)
-        {
-            test.style.transform = "translateX(-28px)";
-            test2.style.transitionDelay = "500ms";
-            test3.style.left = "0";
-            test2.style.transform = "translateX(4px)";
-            // document.querySelector('#test  svg').style.transform = "translateX(30px)";
-        
+    // if(rect.y < window.innerHeight -50  && !scrollUp)
+    // {
+    //     test.style.transform = `translateX(${translateFirst}px)`;
+    //     test2.style.transform = `translateX(${translateTwo}px)`;
+    //     test2.style.transitionDelay = "500ms";
+    //     test3.style.left = `${translateTwo}px`;
+    //     test3.style.transitionDelay = "1s";
+    // }
+    // else{
+    //     if(this.window.innerWidth < 768)
+    //     {
+    //         test.style.transform = "translateX(-28px)";
+    //         test2.style.transitionDelay = "500ms";
+    //         test3.style.left = "0";
+    //         test2.style.transform = "translateX(4px)";
+    //         // document.querySelector('#test  svg').style.transform = "translateX(30px)";
+    
+    //     }
+    //     else if(this.window.innerWidth > 1000){
+    //         test.style.transform = "translateX(-59px)";
+    //         test2.style.transitionDelay = "500ms";
+    //         test2.style.transform = "translateX(0px)";
 
+    //         test3.style.left = "4px";
+    //     }
+    //     else {
+    //         test.style.transform = "translateX(-47px)";
+    //         test2.style.transitionDelay = "500ms";
+    //         test2.style.transform = "translateX(0px)";
 
-        }
-        else if(this.window.innerWidth > 1000){
-            test.style.transform = "translateX(-59px)";
-            test2.style.transitionDelay = "500ms";
-            test2.style.transform = "translateX(0px)";
-
-            test3.style.left = "4px";
-        }
-        else {
-            test.style.transform = "translateX(-47px)";
-            test2.style.transitionDelay = "500ms";
-            test2.style.transform = "translateX(0px)";
-
-            test3.style.left = "4px";
-        }
+    //         test3.style.left = "4px";
+    //     }
       
-    }
+    // }
 
 },false)
 
-function responsive(){
-    const vn = document.getElementById('vn');
-const chinese = document.getElementById('china');
-const sp = document.getElementById('sp');
-if(window.innerWidth < 500)
+
+const expane = document.getElementById('expanse');
+expane.addEventListener('mouseenter', function(e){
+    const test2 = document.getElementById('test-2');
+const test3 = document.getElementById('test-3');
+const test = document.getElementById('test');
+let translateFirst = 40;
+let translateTwo = 80;
+if(window.innerWidth > 375 && window.innerWidth < 1200)
 {
-   
-        document.getElementById('container_map').style.transform = "translate(31%,105px)"
-chinese.style.transform = "translate(-95%, -77%)"
-    vn.style.transform = "translate(-170%,106%)";
-    sp.style.transform = "translate(-185%,16px)";
+   translateFirst= 25;
+   translateTwo = 50;
+} 
 
-    
-    
+    test.style.transform = `translateX(${translateFirst}px)`;
+    test2.style.transform = `translateX(${translateTwo}px)`;
+    test2.style.transitionDelay = "500ms";
+    test3.style.left = `${translateTwo}px`;
+    test3.style.transitionDelay = "1s";
 
+})
+expane.addEventListener('mouseleave', function(e){
+     
+    const test2 = document.getElementById('test-2');
+    const test3 = document.getElementById('test-3');
+    const test = document.getElementById('test');
+    let translateFirst = 40;
+    let translateTwo = 80;
+   if(window.innerWidth > 375 && window.innerWidth < 1200)
+   {
+       translateFirst= 25;
+       translateTwo = 50;
+   } 
+    if(window.innerWidth < 768)
+    {
+        test.style.transform = "translateX(-28px)";
+        test2.style.transitionDelay = "500ms";
+        test3.style.left = "0";
+        test2.style.transform = "translateX(4px)";
+        // document.querySelector('#test  svg').style.transform = "translateX(30px)";
 
-}
-else if(window.innerWidth >500 && window.innerWidth < 912){
-    document.getElementById('container_map').style.transform = "translate(29%,88px)"
-    chinese.style.transform = "translate(3%, -54%)"
+    }
+    else if(window.innerWidth > 1000){
+        test.style.transform = "translateX(-59px)";
+        test2.style.transitionDelay = "500ms";
+        test2.style.transform = "translateX(0px)";
 
-    vn.style.transform = "translate(3%,63%)"
-    sp.style.transform = "translate(-22%,67%)";
+        test3.style.left = "4px";
+    }
+    else {
+        test.style.transform = "translateX(-47px)";
+        test2.style.transitionDelay = "500ms";
+        test2.style.transform = "translateX(0px)";
 
+        test3.style.left = "4px";
+    }
+  
+})
 
-}
-else if(window.innerWidth >=912 && window.innerWidth < 978){
-   document.getElementById('container_map').style.transform = "translateX(26%)"
-}
-else if(window.innerWidth >=979 && window.innerWidth < 1067){
-    vn.style.transform = "translate(-5%,41%)";
-    chinese.style.transform = "translate(0%,155%)"
-
-
-    document.getElementById('container_map').style.transform = "translateX(26%)"
- }
-else if(window.innerWidth >=1067 && window.innerWidth < 1236){
-    vn.style.transform = "translate(-2%,44%)";
-
-    document.getElementById('container_map').style.transform = "translateX(17%)"
- }
-
- else if(window.innerWidth >=1236 && window.innerWidth < 1450){
-    vn.style.transform = "translate(-7%,54%)";
-    chinese.style.transform = "translate(0%,160%)"
-
-
-    document.getElementById('container_map').style.transform = "translateX(17%)";
-    sp.style.transform = "translate(-46%,67%)";
-
- }
- else if(window.innerWidth >=1450 && window.innerWidth < 1550){
-    document.getElementById('container_map').style.transform = "translateX(11%)";
-
-    vn.style.transform = "translate(-7%,54%)";
-    chinese.style.transform = "translate(0%,160%)"
-
-
-    sp.style.transform = "translate(-46%,67%)";
-
- }
- else if(window.innerWidth >=1551 && window.innerWidth < 1699){
-    document.getElementById('container_map').style.transform = "translate(11%,-4%)";
-
-    vn.style.transform = "translate(-7%,54%)";
-    chinese.style.transform = "translate(0%,160%)"
-
-
-    sp.style.transform = "translate(-46%,67%)";
-
- }
- else if(window.innerWidth >=1699 && window.innerWidth < 1900){
-    document.getElementById('container_map').style.transform = "translate(6%,-5%)";
-
-    vn.style.transform = "translate(-7%,54%)";
-    chinese.style.transform = "translate(0%,160%)"
-
-
-    sp.style.transform = "translate(-46%,67%)";
-
- }
- else if(window.innerWidth >=1800 && window.innerWidth < 2400){
-    document.getElementById('container_map').style.transform = "translate(-1%,-2%)";
-
-    vn.style.transform = "translate(-7%,54%)";
-    chinese.style.transform = "translate(0%,160%)"
-
-
-    sp.style.transform = "translate(-46%,67%)";
-
- }
- else if(window.innerWidth >=2410 && window.innerWidth < 2510){
-    document.getElementById('container_map').style.transform = "translate(-21%,-2%)";
-
-    vn.style.transform = "translate(-7%,54%)";
-    chinese.style.transform = "translate(0%,160%)"
-
-
-    sp.style.transform = "translate(-46%,67%)";
-
- }
- else if(window.innerWidth >=2511 && window.innerWidth <= 2650){
-    document.getElementById('container_map').style.transform = "translate(-21%,-2%)";
-
-    vn.style.transform = "translate(-7%,54%)";
-    chinese.style.transform = "translate(0%,160%)"
-
-
-    sp.style.transform = "translate(-59%,67%)";
-
- }
- else if(window.innerWidth >2650 && window.innerWidth <= 3500){
-    document.getElementById('container_map').style.transform = "translate(-37%,-2%)";
-
-    vn.style.transform = "translate(-7%,54%)";
-    chinese.style.transform = "translate(0%,160%)"
-
-
-    sp.style.transform = "translate(-59%,67%)";
-
- }
-}
 responsive();
 
 // if( window.innerWidth >= 1741 && window.innerWidth < 1950 )
