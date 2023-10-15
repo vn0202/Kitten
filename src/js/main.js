@@ -165,38 +165,67 @@ window.addEventListener('scroll', function (e){
                         left:trans,
                         behavior:'smooth'
                     })
+
                 }    
+            }
+            else{
+                return true;
             }
                 
          
         })
     }
-    // else if(scrollUp && (this.innerHeight - rectProduct.bottom) < 0)
-    // {
-    //     e.preventDefault();
-    //     let trans = 0;
-    //     product_case.style.overflowX = 'scroll';
+    else if(scrollUp && (this.innerHeight - rectProduct.bottom) < 0)
 
-    //     product_case.addEventListener('wheel', function(e){
-    //         const last = document.getElementById('last-child');
+    {
+        
+        e.preventDefault();
+        let trans = 0;
+        product_case.style.overflowX = 'scroll';
+        product_case.addEventListener('wheel', function(e){
+            const first_child = document.getElementById('first-child').getBoundingClientRect();
+            console.log(first_child.x,first_child.y);
+            if(first_child.x <78)
+            {
+                if(e.deltaY < 0)
+                {
+                    trans -=100;
+                    e.preventDefault();
+                    product_case.scrollTo({
+                        left:trans,
+                        behavior:'smooth'
+                    })
+                }
+               
+            }
+           
+          
+        },false)
+        // console.log(1);
+    
 
-    //         let pos =(window.innerWidth - last.getBoundingClientRect().x) < 100;
+        // product_case.addEventListener('wheel', function(e){
+        //     const last = document.getElementById('last-child');
+
+        //     let pos =(window.innerWidth - last.getBoundingClientRect().x) < 100;
             
-    //                 e.preventDefault();
-    //                 alert('hello');
+        //             e.preventDefault();
+        //             alert('hello');
                     
-    //                     trans+= 100;
-    //                 product_case.scrollTo({
-    //                     right:trans,
-    //                     behavior:'smooth'
-    //                 })
+        //                 trans+= 100;
+        //             product_case.scrollTo({
+        //                 right:trans,
+        //                 behavior:'smooth'
+        //             })
                   
             
                 
          
-    //     })
+        // })
         
-    // }
+    }
+    else
+    return true;
    
 
    

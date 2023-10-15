@@ -902,7 +902,9 @@ body{
   .hero-container {
     position: relative;
   }
-
+#product_case{
+  transition: all 600ms ease-in;
+}
 #product_case::-webkit-scrollbar {
   display: none;
 }
