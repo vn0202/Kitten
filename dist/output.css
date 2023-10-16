@@ -784,10 +784,6 @@ video {
   margin-top: 98px;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .block {
   display: block;
 }
@@ -925,6 +921,10 @@ video {
   width: max-content;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
 .min-w-\[180px\] {
   min-width: 180px;
 }
@@ -1013,11 +1013,6 @@ video {
 
 .translate-y-\[15\%\] {
   --tw-translate-y: 15%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[48px\] {
-  --tw-translate-x: -48px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1681,11 +1676,6 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .md\:-translate-x-\[58px\] {
-    --tw-translate-x: -58px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1949,11 +1939,6 @@ video {
     width: 60px;
   }
 
-  .lg\:translate-x-0 {
-    --tw-translate-x: 0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .lg\:-translate-x-\[58px\] {
     --tw-translate-x: -58px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -2078,6 +2063,14 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-\[440px\] {
+    width: 440px;
+  }
+
+  .xl\:w-\[156px\] {
+    width: 156px;
+  }
+
   .xl\:gap-8 {
     gap: 2rem;
   }
@@ -2098,5 +2091,9 @@ video {
 
   .\32xl\:w-\[75px\] {
     width: 75px;
+  }
+
+  .\32xl\:w-\[440px\] {
+    width: 440px;
   }
 }
