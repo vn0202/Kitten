@@ -1,0 +1,62 @@
+@media (max-width: 767px) {
+    .arrow-block svg {
+        width: 12%;
+    }
+  }
+
+@media (min-width: 768px) {
+    #sp {
+        transform: translate(-16%, -29%) !important;  
+    }
+    #vn {
+        transform: translate(14%, 1%) !important;
+    }
+    #china {
+        transform: translate(43%, -73%) !important;
+    }
+    main {
+        background-size: 1504px 1156px, 1260px 550px !important;
+        background-position: right -6px, right 584px !important;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    
+  }
+  
+  @media (min-width: 1280px) {
+    #sp {
+        transform: translate(-38%, 50%) !important;
+    }
+    #vn {
+        transform: translate(-7%, 54%) !important;
+    }
+    #china {
+        transform: translate(0%, 160%) !important;
+    }
+    main {
+        background-size: 1322px 1400px, 2060px 950px !important;
+    }
+  }
+@media (min-width: 1536px) {
+    #sp {
+        transform: translate(-20%, 33%) !important;
+    }
+    #vn {
+        transform: translate(5%, 5%) !important;
+    }
+    .container {
+      max-width: calc(100% - 250px) !important;
+    }
+    #china {
+        transform: translate(25%, 99%) !important;
+    }
+    main {
+        background-size: 1822px 1256px, 2260px 650px !important;
+    }
+}
+@media (min-width: 2160px) {
+    .container {
+        max-width: 1670px !important;
+      }
+}
